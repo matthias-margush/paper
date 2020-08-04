@@ -8,6 +8,7 @@
       "background": "#F8F6F2",
       "borderColor": "#F8F6F2"
     },
+    "Borders.color": "DDD9CC",
     "EditorTabs": {
       "underlineColor": "#DDD9CC",
       "hoverBackground": "#F8F6F2",
@@ -64,8 +65,11 @@
       "Violet": "#CCDDDD",
       "Yellow": "#DDDDCC"
     },
+    "Component.borderColor": "#DDD9CC",
     "TextArea.background": "#F8F6F2",
-    "TextField.background": "#F8F6F2"
+    "TextArea.inactiveBackground": "#F8F6F2",
+    "TextField.background": "#F8F6F2",
+    "TextField.inactiveForeground": "#F8F6F2"
   },
   "icons": {
     "ColorPalette": {
