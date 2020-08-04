@@ -9,11 +9,53 @@
       "borderColor": "#F8F6F2"
     },
     "EditorTabs": {
-      "underlinedTabBackground": "#F8F6F2",
       "underlineColor": "#DDD9CC",
-      "hoverBackground": "#F8F6F2"
+      "hoverBackground": "#F8F6F2",
+      "underlinedTabBackground": "#F8F6F2"
     },
-    "CompletionPopup.selectionBackground": "#F8F6F2",
+    "CompletionPopup": {
+      "selectionBackground": "#F8F6F2",
+      "selectionInactiveBackground": "#F8F6F2"
+    },
+
+    "ScrollBar.Mac.Transparent.thumbColor": "#F8F6F2",
+    "ScrollBar.Mac.hoverThumbColor": "#F8F6F2",
+    "ScrollBar.Mac.trackColor": "#F8F6F2",
+    "ScrollBar.Mac": {
+      "Transparent.hoverThumbBorderColor": "#F8F6F2",
+      "Transparent.hoverThumbColor": "#F8F6F2",
+      "Transparent.hoverTrackColor": "#F8F6F2",
+      "Transparent.thumbBorderColor": "#F8F6F2",
+      "Transparent.thumbColor": "#F8F6F2",
+      "Transparent.trackColor": "#F8F6F2",
+
+      "hoverThumbBorderColor": "#F8F6F2",
+      "hoverThumbColor": "#F8F6F2",
+      "hoverTrackColor": "#F8F6F2",
+      "thumbBorderColor": "#F8F6F2",
+      "thumbColor": "#F8F6F2",
+      "trackColor": "#F8F6F2"
+    },
+
+    "ToolBar.background": "#F8F6F2",
+    "ToolWindow.Button.hoverBackground": "#F8F6F2",
+    "ToolWindow.Button.selectedBackground": "#F8F6F2",
+    "ToolWindow.HeaderCloseButton.background": "#F8F6F2",
+    "ToolWindow.Header.inactiveBackground": "#F8F6F2",
+    "ToolWindow.Header.background": "#F8F6F2",
+    "ToolWindow.HeaderTab.hoverBackground": "#F8F6F2",
+    "ToolWindow.HeaderTab.selectedInactiveBackground": "#F8F6F2",
+    "ToolWindow.HeaderTab.hoverInactiveBackground": "#F8F6F2",
+    "ToolWindow.HeaderTab.underlinedTabBackground": "#F8F6F2",
+    "ToolWindow.HeaderTab.underlinedTabInactiveBackground": "#F8F6F2",
+    "Popup.Toolbar.background": "#F8F6F2",
+    "Toolbar.Floating.background": "#F8F6F2",
+    "ToolTip.Actions": {
+      "background": "#F8F6F2"
+    },
+    "ToolTip" : {
+      "background": "#F8F6F2"
+    },
     "FileColor": {
       "Blue": "#CCCCDD",
       "Green": "#CCDDCC",
