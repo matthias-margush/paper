@@ -15,8 +15,8 @@
       "underlinedTabBackground": "#F8F6F2"
     },
     "CompletionPopup": {
-      "selectionBackground": "#F8F6F2",
-      "selectionInactiveBackground": "#F8F6F2"
+      "selectionBackground": "#DDD9CC",
+      "selectionInactiveBackground": "#DDD9CC"
     },
 
     "ScrollBar.Mac.Transparent.thumbColor": "#F8F6F2",

@@ -30,7 +30,7 @@
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="999999" />
     <option name="METHOD_SEPARATORS_COLOR" value="" />
     <option name="MODIFIED_LINES_COLOR" value="ccccdd" />
-    <option name="NOTIFICATION_BACKGROUND" value="777755" />
+    <option name="NOTIFICATION_BACKGROUND" value="ccccdd" />
     <option name="PROMOTION_PANE" value="555577" />
     <option name="QUESTION_HINT" value="557777" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="" />
