@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+theme="Paper"
+declare -A colors=(
+  ["highlight"]="#DDD9CC"
+  ["foreground"]="#2A2A2A"
+  ["background"]="#E8E6E2"
+  ["dimForeground"]="#6A6A6A"
+  ["dimBackground"]="#F8F6F2"
+  ["red"]="#775555"
+  ["green"]="#557755"
+  ["blue"]="#555577"
+  ["purple"]="#775577"
+  ["yellow"]="#777755"
+  ["invertedRed"]="#DDCCCC"
+  ["invertedGreen"]="#CCDDCC"
+  ["invertedBlue"]="#CCCCDD"
+  ["invertedPurple"]="#DDCCDD"
+  ["invertedYellow"]="#DDDDCC"
+  ["grey"]="#999999"
+)
+
+editor_substitutions=""
+for name in "${!colors[@]}"; do
+  code="${colors[$name]}"
+  code="${code:1}"
+  code=$(echo "$code" | tr '[:upper:]' '[:lower:]')
+  editor_substitutions="s/{{$name}}/$code/g; $editor_substitutions"
+done
+editor_substitutions="s/{{theme}}/$theme/g; $editor_substitutions"
+
+sed "$editor_substitutions" "resources/$theme.tmpl.xml" >"resources/$theme.xml"
+#sed "$editor_substitutions" "resources/$theme.tmpl.xml" >"resources/$theme.xml.test"
+#diff "resources/$theme.xml.test" "resources/$theme.xml"
+
+ide_substitutions=""
+for name in "${!colors[@]}"; do
+  code="${colors[$name]}"
+  code=$(echo "$code" | tr '[:lower:]' '[:upper:]')
+  ide_substitutions="s/{{$name}}/$code/g; $ide_substitutions"
+done
+ide_substitutions="s/{{theme}}/$theme/g; $editor_substitutions"
+
+sed "$ide_substitutions" "resources/$theme.theme.tmpl.json" >"resources/$theme.theme.json"
+#sed "$ide_substitutions" "resources/$theme.theme.tmpl.json" >"resources/$theme.theme.json.test"
+#diff "resources/$theme.theme.json.test" "resources/$theme.theme.json"
