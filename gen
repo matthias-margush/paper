@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/local/bin/bash
 
 theme="Paper"
 declare -A colors=(
@@ -20,6 +20,18 @@ declare -A colors=(
   ["grey"]="#999999"
 )
 
+ide_substitutions=""
+for name in "${!colors[@]}"; do
+  code="${colors[$name]}"
+  code=$(echo "$code" | tr '[:lower:]' '[:upper:]')
+  ide_substitutions="s/{{$name}}/$code/g; $ide_substitutions"
+done
+ide_substitutions="s/{{theme}}/$theme/g; $ide_substitutions"
+
+sed "$ide_substitutions" "resources/$theme.theme.tmpl.json" >"resources/$theme.theme.json"
+#sed "$ide_substitutions" "resources/$theme.theme.tmpl.json" >"resources/$theme.theme.json.test"
+#diff "resources/$theme.theme.json.test" "resources/$theme.theme.json"
+
 editor_substitutions=""
 for name in "${!colors[@]}"; do
   code="${colors[$name]}"
@@ -33,14 +45,3 @@ sed "$editor_substitutions" "resources/$theme.tmpl.xml" >"resources/$theme.xml"
 #sed "$editor_substitutions" "resources/$theme.tmpl.xml" >"resources/$theme.xml.test"
 #diff "resources/$theme.xml.test" "resources/$theme.xml"
 
-ide_substitutions=""
-for name in "${!colors[@]}"; do
-  code="${colors[$name]}"
-  code=$(echo "$code" | tr '[:lower:]' '[:upper:]')
-  ide_substitutions="s/{{$name}}/$code/g; $ide_substitutions"
-done
-ide_substitutions="s/{{theme}}/$theme/g; $editor_substitutions"
-
-sed "$ide_substitutions" "resources/$theme.theme.tmpl.json" >"resources/$theme.theme.json"
-#sed "$ide_substitutions" "resources/$theme.theme.tmpl.json" >"resources/$theme.theme.json.test"
-#diff "resources/$theme.theme.json.test" "resources/$theme.theme.json"

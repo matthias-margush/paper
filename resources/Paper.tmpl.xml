@@ -11,7 +11,7 @@
     <option name="ANNOTATIONS_COLOR" value="{{blue}}" />
     <option name="CARET_COLOR" value="aaaaaa" />
     <option name="CARET_ROW_COLOR" value="" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="{{background}}" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="{{dimBackground}}" />
     <option name="DELETED_LINES_COLOR" value="{{highlight}}" />
     <option name="DIFF_SEPARATORS_BACKGROUND" value="{{highlight}}" />
     <option name="DOCUMENTATION_COLOR" value="{{background}}" />

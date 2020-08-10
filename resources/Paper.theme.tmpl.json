@@ -174,7 +174,8 @@
       "foreground": "{{foreground}}",
       "selectionForeground": "{{foreground}}",
       "selectionBackground": "{{highlight}}",
-      "selectionInactiveBackground": "{{highlight}}"
+      "selectionInactiveBackground": "{{highlight}}",
+      "background": "{{dimBackground}}"
     }
   }
 }
