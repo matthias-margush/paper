@@ -2,7 +2,7 @@
   <id>com.margush.paper</id>
   <name>Paper</name>
   <version>1.0</version>
-  <vendor email="matthias.margush@me.com" url="http://www.example.com">n/a</vendor>
+  <vendor email="matthias.margush@me.com" url="http://www.example.com">Matthias Margush</vendor>
 
   <description><![CDATA[
       A paper-inspired color theme for IDEA.
