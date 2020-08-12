@@ -1,8 +1,20 @@
 #!/usr/local/bin/bash
 
+invert() {
+  local color="$1"
+  hex="0x${color:1}"
+  printf "#%06X" $((0xFFFFFF - "$hex"))
+}
+
 for theme in themes/*.sh
 do
   source "$theme"
+
+  colors['invertedRed']=$(invert ${colors['red']})
+  colors['invertedGreen']=$(invert ${colors['green']})
+  colors['invertedBlue']=$(invert ${colors['blue']})
+  colors['invertedPurple']=$(invert ${colors['purple']})
+  colors['invertedYellow']=$(invert ${colors['yellow']})
 
   mkdir -p "$theme/resources/META-INF"
   ide_substitutions=""

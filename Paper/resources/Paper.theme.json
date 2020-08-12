@@ -79,18 +79,18 @@
       "underlineHeight": 3
     },
     "FileColor": {
-      "Blue": "#CCCCDD",
-      "Green": "#CCDDCC",
-      "Orange": "#DDCCCC",
-      "Rose": "#DDCCCC",
-      "Violet": "#DDCCDD",
-      "Yellow": "#DDDDCC"
+      "Blue": "#AAAA88",
+      "Green": "#AA88AA",
+      "Orange": "#88AAAA",
+      "Rose": "#88AAAA",
+      "Violet": "#88AA88",
+      "Yellow": "#8888AA"
     },
     "Link": {
       "activeForeground": "#555577",
       "hoverForeground": "#555577",
       "pressedForeground": "#555577",
-      "secondaryForeground": "#CCCCDD",
+      "secondaryForeground": "#AAAA88",
       "visitedForeground": "#555577"
     },
     "List": {

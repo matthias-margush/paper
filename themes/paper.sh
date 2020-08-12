@@ -7,15 +7,12 @@ declare -A colors=(
   ["background"]="#E8E6E2"
   ["dimForeground"]="#3A3A3A"
   ["dimBackground"]="#F8F6F2"
+
   ["red"]="#775555"
   ["green"]="#557755"
   ["blue"]="#555577"
   ["purple"]="#775577"
   ["yellow"]="#777755"
-  ["invertedRed"]="#DDCCCC"
-  ["invertedGreen"]="#CCDDCC"
-  ["invertedBlue"]="#CCCCDD"
-  ["invertedPurple"]="#DDCCDD"
-  ["invertedYellow"]="#DDDDCC"
+
   ["grey"]="#999999"
 )

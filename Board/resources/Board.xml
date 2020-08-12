@@ -7,7 +7,7 @@
     <property name="originalScheme">Board</property>
   </metaInfo>
   <colors>
-    <option name="ADDED_LINES_COLOR" value="557755" />
+    <option name="ADDED_LINES_COLOR" value="332233" />
     <option name="ANNOTATIONS_COLOR" value="ccccdd" />
     <option name="CARET_COLOR" value="aaaaaa" />
     <option name="CARET_ROW_COLOR" value="" />
@@ -51,25 +51,26 @@
     <option name="LINE_NUMBERS_COLOR" value="222633" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="222633" />
     <option name="METHOD_SEPARATORS_COLOR" value="" />
-    <option name="MODIFIED_LINES_COLOR" value="555577" />
-    <option name="NOTIFICATION_BACKGROUND" value="555577" />
+    <option name="MODIFIED_LINES_COLOR" value="333322" />
+    <option name="NOTIFICATION_BACKGROUND" value="333322" />
     <option name="PROMOTION_PANE" value="ccccdd" />
     <option name="QUESTION_HINT" value="557777" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="" />
     <option name="RECENT_LOCATIONS_SELECTION" value="ccccdd" />
     <option name="RIGHT_MARGIN_COLOR" value="222633" />
     <option name="SELECTED_INDENT_GUIDE" value="222633" />
+    <option name="TEARLINE_COLOR" value="222633" />
     <option name="SELECTED_TEARLINE_COLOR" value="222633" />
     <option name="SELECTION_BACKGROUND" value="222633" />
     <option name="SELECTION_FOREGROUND" value="" />
     <option name="SEPARATOR_BELOW_COLOR" value="222633" />
     <option name="SOFT_WRAP_SIGN_COLOR" value="222633" />
     <option name="ScrollBar.Mac.thumbColor" value="" />
-    <option name="VCS_ANNOTATIONS_COLOR_1" value="557755" />
+    <option name="VCS_ANNOTATIONS_COLOR_1" value="332233" />
     <option name="VCS_ANNOTATIONS_COLOR_2" value="222633" />
-    <option name="VCS_ANNOTATIONS_COLOR_3" value="555577" />
-    <option name="VCS_ANNOTATIONS_COLOR_4" value="777755" />
-    <option name="VCS_ANNOTATIONS_COLOR_5" value="775555" />
+    <option name="VCS_ANNOTATIONS_COLOR_3" value="333322" />
+    <option name="VCS_ANNOTATIONS_COLOR_4" value="222233" />
+    <option name="VCS_ANNOTATIONS_COLOR_5" value="223333" />
     <option name="VISUAL_INDENT_GUIDE" value="222633" />
     <option name="WHITESPACES" value="222633" />
     <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="222633" />
@@ -290,7 +291,7 @@
     </option>
     <option name="DEFAULT_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="454545" />
+        <option name="FOREGROUND" value="ddddcc" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
@@ -324,7 +325,7 @@
     </option>
     <option name="DEFAULT_IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="454545" />
+        <option name="FOREGROUND" value="ddddcc" />
       </value>
     </option>
     <option name="DEFAULT_INSTANCE_FIELD">
@@ -412,25 +413,25 @@
     </option>
     <option name="DIFF_CONFLICT">
       <value>
-        <option name="BACKGROUND" value="777755" />
+        <option name="BACKGROUND" value="222233" />
         <option name="ERROR_STRIPE_COLOR" value="ddddcc" />
       </value>
     </option>
     <option name="DIFF_DELETED">
       <value>
-        <option name="BACKGROUND" value="775555" />
+        <option name="BACKGROUND" value="223333" />
         <option name="ERROR_STRIPE_COLOR" value="ddcccc" />
       </value>
     </option>
     <option name="DIFF_INSERTED">
       <value>
-        <option name="BACKGROUND" value="557755" />
+        <option name="BACKGROUND" value="332233" />
         <option name="ERROR_STRIPE_COLOR" value="ccddcc" />
       </value>
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="BACKGROUND" value="775555" />
+        <option name="BACKGROUND" value="223333" />
         <option name="ERROR_STRIPE_COLOR" value="ddcccc" />
       </value>
     </option>
@@ -505,7 +506,7 @@
     </option>
     <option name="INLINE_PARAMETER_HINT">
       <value>
-        <option name="FOREGROUND" value="555577" />
+        <option name="FOREGROUND" value="333322" />
         <option name="BACKGROUND" value="3a3a3a" />
       </value>
     </option>
@@ -526,17 +527,17 @@
     </option>
     <option name="KOTLIN_SMART_CAST_RECEIVER">
       <value>
-        <option name="BACKGROUND" value="557755" />
+        <option name="BACKGROUND" value="332233" />
       </value>
     </option>
     <option name="KOTLIN_SMART_CAST_VALUE">
       <value>
-        <option name="BACKGROUND" value="557755" />
+        <option name="BACKGROUND" value="332233" />
       </value>
     </option>
     <option name="KOTLIN_SMART_CONSTANT">
       <value>
-        <option name="BACKGROUND" value="557755" />
+        <option name="BACKGROUND" value="332233" />
       </value>
     </option>
     <option name="LINE_FULL_COVERAGE">
@@ -664,19 +665,19 @@
     </option>
     <option name="SPY-JS.EXCEPTION">
       <value>
-        <option name="BACKGROUND" value="775555" />
+        <option name="BACKGROUND" value="223333" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
     <option name="SPY-JS.FUNCTION_SCOPE">
       <value>
-        <option name="BACKGROUND" value="777755" />
+        <option name="BACKGROUND" value="222233" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
     <option name="SPY-JS.PATH_LEVEL_ONE">
       <value>
-        <option name="BACKGROUND" value="557755" />
+        <option name="BACKGROUND" value="332233" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -688,7 +689,7 @@
     </option>
     <option name="SPY-JS.PROGRAM_SCOPE">
       <value>
-        <option name="BACKGROUND" value="777755" />
+        <option name="BACKGROUND" value="222233" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -720,7 +721,7 @@
     </option>
     <option name="TS.TYPE_GUARD">
       <value>
-        <option name="BACKGROUND" value="557755" />
+        <option name="BACKGROUND" value="332233" />
       </value>
     </option>
     <option name="TS.TYPE_PARAMETER">
