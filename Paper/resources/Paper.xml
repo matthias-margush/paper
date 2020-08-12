@@ -96,13 +96,13 @@
     </option>
     <option name="BREADCRUMBS_CURRENT">
       <value>
-        <option name="FOREGROUND" value="6a6a6a" />
+        <option name="FOREGROUND" value="3a3a3a" />
         <option name="BACKGROUND" value="e8e6e2" />
       </value>
     </option>
     <option name="BREADCRUMBS_HOVERED">
       <value>
-        <option name="FOREGROUND" value="6a6a6a" />
+        <option name="FOREGROUND" value="3a3a3a" />
         <option name="BACKGROUND" value="e8e6e2" />
       </value>
     </option>

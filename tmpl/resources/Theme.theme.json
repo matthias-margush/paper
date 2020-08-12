@@ -2,7 +2,7 @@
   "name": "{{theme}}",
   "author": "Matthias C. Margush",
   "editorScheme": "/{{theme}}.xml",
-  "dark": false,
+  "dark": {{dark}},
   "icons": {
     "ColorPalette": {
       "Actions.Blue": "{{blue}}",

@@ -1,0 +1,181 @@
+{
+  "name": "Board",
+  "author": "Matthias C. Margush",
+  "editorScheme": "/Board.xml",
+  "dark": true,
+  "icons": {
+    "ColorPalette": {
+      "Actions.Blue": "#CCCCDD",
+      "Actions.Green": "#CCDDCC",
+      "Actions.Grey": "#999999",
+      "Actions.GreyInline": "#999999",
+      "Actions.GreyInline.Dark": "#999999",
+      "Actions.Red": "#DDCCCC",
+      "Actions.Yellow": "#DDDDCC",
+      "Objects.BlackText": "#E8E6E2",
+      "Objects.Blue": "#CCCCDD",
+      "Objects.Green": "#CCDDCC",
+      "Objects.GreenAndroid": "#CCDDCC",
+      "Objects.Grey": "#999999",
+      "Objects.Pink": "#DDCCCC",
+      "Objects.Purple": "#DDCCDD",
+      "Objects.Red": "#DDCCCC",
+      "Objects.RedStatus": "#DDCCCC",
+      "Objects.Yellow": "#DDDDCC",
+      "Objects.YellowDark": "#DDDDCC"
+    }
+  },
+  "ui": {
+    "*": {
+      "foreground": "#E8E6E2",
+      "background": "#2A2A2A",
+      "borderColor": "#2A2A2A"
+    },
+    "Borders.color": "#222633",
+    "Button": {
+      "foreground": "#E8E6E2",
+      "disabledText": "#222633",
+      "background": "#2A2A2A",
+      "startBackground": "#2A2A2A",
+      "endBackground": "#2A2A2A",
+      "shadowColor": "#2A2A2A",
+      "default.startBorderColor": "#222633",
+      "default.endBorderColor": "#222633",
+      "default.focusedBorderColor": "#222633",
+      "startBorderColor": "#222633",
+      "endBorderColor": "#222633",
+      "focusedBorderColor": "#222633",
+      "disabledBorderColor": "#222633",
+      "default.foreground": "#2A2A2A",
+      "default.shadowColor": "#2A2A2A",
+      "default.startBackground": "#E8E6E2",
+      "default.endBackground": "#E8E6E2"
+    },
+    "ComboBox": {
+      "background": "#222633",
+      "nonEditableBackground": "#222633",
+      "selectionBackground": "#222633",
+      "foreground": "#E8E6E2",
+      "disabledForeground": "#E8E6E2",
+      "modifiedItemForeground": "#E8E6E2",
+      "selectionForeground": "#E8E6E2"
+    },
+    "CompletionPopup": {
+      "selectionBackground": "#3A3A3A",
+      "selectionInactiveBackground": "#3A3A3A",
+      "foreground": "#E8E6E2",
+      "matchForeground": "#F8F6F2"
+    },
+    "Component": {
+      "borderColor": "#222633"
+    },
+    "EditorTabs": {
+      "underlineColor": "#999999",
+      "inactiveUnderlineColor": "#999999",
+      "hoverBackground": "#2A2A2A",
+      "underlinedTabBackground": "#2A2A2A",
+      "background": "#2A2A2A",
+      "borderColor": "#2A2A2A",
+      "underlineHeight": 3
+    },
+    "FileColor": {
+      "Blue": "#555577",
+      "Green": "#557755",
+      "Orange": "#775555",
+      "Rose": "#775555",
+      "Violet": "#775577",
+      "Yellow": "#777755"
+    },
+    "Link": {
+      "activeForeground": "#CCCCDD",
+      "hoverForeground": "#CCCCDD",
+      "pressedForeground": "#CCCCDD",
+      "secondaryForeground": "#555577",
+      "visitedForeground": "#CCCCDD"
+    },
+    "List": {
+      "foreground": "#E8E6E2",
+      "selectionForeground": "#E8E6E2",
+      "background": "#2A2A2A"
+    },
+    "Plugins": {
+      "SearchField.borderColor": "#222633",
+      "SearchField.background": "#3A3A3A",
+      "background": "#2A2A2A",
+      "lightSelectionBackground": "#3A3A3A",
+      "Button": {
+        "installBackground": "#2A2A2A",
+        "installForeground": "#E8E6E2",
+        "installBorderColor": "#222633",
+        "installFillBackground": "#E8E6E2",
+        "installFillForeground": "#2A2A2A",
+        "updateBackground": "#CCDDCC",
+        "updateForeground": "#2A2A2A",
+        "updateBorderColor": "#222633"
+      }
+    },
+    "ScrollBar.Mac": {
+      "Transparent.hoverThumbBorderColor": "#2A2A2A",
+      "Transparent.hoverThumbColor": "#2A2A2A",
+      "Transparent.hoverTrackColor": "#2A2A2A",
+      "Transparent.thumbBorderColor": "#2A2A2A",
+      "Transparent.thumbColor": "#2A2A2A",
+      "Transparent.trackColor": "#2A2A2A",
+      "hoverThumbBorderColor": "#2A2A2A",
+      "hoverThumbColor": "#2A2A2A",
+      "hoverTrackColor": "#2A2A2A",
+      "thumbBorderColor": "#2A2A2A",
+      "thumbColor": "#2A2A2A",
+      "trackColor": "#2A2A2A"
+    },
+    "ScrollBar.Mac.Transparent.thumbColor": "#2A2A2A",
+    "ScrollBar.Mac.hoverThumbColor": "#2A2A2A",
+    "ScrollBar.Mac.trackColor": "#2A2A2A",
+    "TabbedPane": {
+      "underlineColor": "#222633",
+      "hoverColor": "#2A2A2A"
+    },
+    "TextArea": {
+      "background": "#3A3A3A",
+      "inactiveBackground": "#3A3A3A"
+    },
+    "TextField": {
+      "background": "#3A3A3A",
+      "inactiveForeground": "#3A3A3A"
+    },
+    "ToolBar.background": "#2A2A2A",
+    "ToolTip": {
+      "background": "#2A2A2A"
+    },
+    "ToolTip.Actions": {
+      "background": "#2A2A2A"
+    },
+    "ToolWindow": {
+      "Button": {
+        "hoverBackground": "#2A2A2A",
+        "selectedBackground": "#2A2A2A"
+      },
+      "Header": {
+        "inactiveBackground": "#2A2A2A",
+        "background": "#2A2A2A"
+      },
+      "HeaderTab": {
+        "hoverBackground": "#2A2A2A",
+        "selectedInactiveBackground": "#2A2A2A",
+        "hoverInactiveBackground": "#2A2A2A",
+        "underlinedTabBackground": "#2A2A2A"
+      },
+      "HeaderCloseButton": {
+        "background": "#2A2A2A"
+      }
+    },
+    "Toolbar.Floating.background": "#2A2A2A",
+    "Tree": {
+      "foreground": "#E8E6E2",
+      "selectionForeground": "#E8E6E2",
+      "selectionBackground": "#222633",
+      "selectionInactiveBackground": "#222633",
+      "background": "#3A3A3A"
+    }
+  }
+}
