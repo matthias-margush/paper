@@ -1,6 +1,6 @@
 <idea-plugin>
-  <id>com.margush.Paper</id>
-  <name>Paper</name>
+  <id>com.margush.Paper Light</id>
+  <name>Paper Light</name>
   <version>1.0</version>
   <vendor email="matthias.margush@me.com" url="http://github.com/matthias-margush/paper">Matthias Margush</vendor>
 
@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="855389ec-4aa1-4245-9f34-deff82212b68" path="/Paper.theme.json"/>
+    <themeProvider id="762A8223-BB63-43DD-9C1D-11F64F7DE852" path="/Paper Light.theme.json"/>
   </extensions>
 
   <actions>

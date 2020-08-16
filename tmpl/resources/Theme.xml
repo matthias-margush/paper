@@ -11,38 +11,38 @@
     <option name="ANNOTATIONS_COLOR" value="{{blue}}" />
     <option name="CARET_COLOR" value="aaaaaa" />
     <option name="CARET_ROW_COLOR" value="" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="{{dimBackground}}" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="{{foreground}}" />
     <option name="DELETED_LINES_COLOR" value="{{highlight}}" />
     <option name="DIFF_SEPARATORS_BACKGROUND" value="{{highlight}}" />
-    <option name="DOCUMENTATION_COLOR" value="{{background}}" />
+    <option name="DOCUMENTATION_COLOR" value="{{dimBackground}}" />
     <option name="DOC_COMMENT_GUIDE" value="" />
     <option name="DOC_COMMENT_LINK" value="{{highlight}}" />
     <option name="ERROR_HINT" value="{{red}}" />
-    <option name="FILESTATUS_ADDED" value="{{green}}" />
-    <option name="FILESTATUS_COPIED" value="{{green}}" />
-    <option name="FILESTATUS_DELETED" value="{{grey}}" />
-    <option name="FILESTATUS_HIJACKED" value="{{yellow}}" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{{red}}" />
+    <option name="FILESTATUS_ADDED" value="{{invertedGreen}}" />
+    <option name="FILESTATUS_COPIED" value="{{invertedGreen}}" />
+    <option name="FILESTATUS_DELETED" value="{{invertedGrey}}" />
+    <option name="FILESTATUS_HIJACKED" value="{{invertedYellow}}" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="{{invertedRed}}" />
     <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{{red}}" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="{{red}}" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="{{red}}" />
-    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="{{green}}" />
-    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_OBSTRUCTED" value="{{yellow}}" />
-    <option name="FILESTATUS_IDEA_SVN_REPLACED" value="{{green}}" />
-    <option name="FILESTATUS_MERGED" value="{{blue}}" />
-    <option name="FILESTATUS_MODIFIED" value="{{blue}}" />
-    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="{{blue}}" />
-    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="{{blue}}" />
-    <option name="FILESTATUS_OBSOLETE" value="{{yellow}}" />
-    <option name="FILESTATUS_RENAMED" value="{{green}}" />
-    <option name="FILESTATUS_SWITCHED" value="{{green}}" />
-    <option name="FILESTATUS_UNKNOWN" value="{{red}}" />
-    <option name="FILESTATUS_addedOutside" value="{{green}}" />
-    <option name="FILESTATUS_changelistConflict" value="{{red}}" />
-    <option name="FILESTATUS_modifiedOutside" value="{{blue}}" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="{{invertedRed}}" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="{{invertedRed}}" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="{{invertedRed}}" />
+    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="{{invertedGreen}}" />
+    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_OBSTRUCTED" value="{{invertedYellow}}" />
+    <option name="FILESTATUS_IDEA_SVN_REPLACED" value="{{invertedGreen}}" />
+    <option name="FILESTATUS_MERGED" value="{{invertedBlue}}" />
+    <option name="FILESTATUS_MODIFIED" value="{{invertedBlue}}" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="{{invertedBlue}}" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="{{invertedBlue}}" />
+    <option name="FILESTATUS_OBSOLETE" value="{{invertedYellow}}" />
+    <option name="FILESTATUS_RENAMED" value="{{invertedGreen}}" />
+    <option name="FILESTATUS_SWITCHED" value="{{invertedGreen}}" />
+    <option name="FILESTATUS_UNKNOWN" value="{{invertedRed}}" />
+    <option name="FILESTATUS_addedOutside" value="{{invertedGreen}}" />
+    <option name="FILESTATUS_changelistConflict" value="{{invertedRed}}" />
+    <option name="FILESTATUS_modifiedOutside" value="{{invertedBlue}}" />
     <option name="FOLDED_TEXT_BORDER_COLOR" value="{{highlight}}" />
-    <option name="GUTTER_BACKGROUND" value="{{dimBackground}}" />
+    <option name="GUTTER_BACKGROUND" value="{{foreground}}" />
     <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="{{green}}" />
     <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="{{highlight}}" />
     <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="{{blue}}" />
@@ -98,24 +98,24 @@
     <option name="BREADCRUMBS_CURRENT">
       <value>
         <option name="FOREGROUND" value="{{dimForeground}}" />
-        <option name="BACKGROUND" value="{{background}}" />
+        <option name="BACKGROUND" value="{{dimBackground}}" />
       </value>
     </option>
     <option name="BREADCRUMBS_HOVERED">
       <value>
         <option name="FOREGROUND" value="{{dimForeground}}" />
-        <option name="BACKGROUND" value="{{background}}" />
+        <option name="BACKGROUND" value="{{dimBackground}}" />
       </value>
     </option>
     <option name="CODE_LENS_BORDER_COLOR">
       <value>
-        <option name="EFFECT_COLOR" value="{{foreground}}" />
+        <option name="EFFECT_COLOR" value="{{background}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.FUNCTION_NAME" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
     <option name="CONSOLE_BLACK_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
       </value>
     </option>
     <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
@@ -175,7 +175,7 @@
     </option>
     <option name="CONSOLE_NORMAL_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
       </value>
     </option>
     <option name="CONSOLE_RED_BRIGHT_OUTPUT">
@@ -201,7 +201,7 @@
     </option>
     <option name="CONSOLE_WHITE_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
       </value>
     </option>
     <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
@@ -407,7 +407,7 @@
     </option>
     <option name="DEPRECATED_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="{{foreground}}" />
+        <option name="EFFECT_COLOR" value="{{background}}" />
         <option name="EFFECT_TYPE" value="3" />
       </value>
     </option>
@@ -457,7 +457,7 @@
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{blue}}" />
-        <option name="BACKGROUND" value="{{background}}" />
+        <option name="BACKGROUND" value="{{dimBackground}}" />
         <option name="EFFECT_COLOR" value="{{blue}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -483,7 +483,7 @@
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="{{dimBackground}}" />
+        <option name="BACKGROUND" value="{{foreground}}" />
         <option name="EFFECT_COLOR" value="{{highlight}}" />
         <option name="ERROR_STRIPE_COLOR" value="{{highlight}}" />
       </value>
@@ -507,12 +507,12 @@
     <option name="INLINE_PARAMETER_HINT">
       <value>
         <option name="FOREGROUND" value="{{invertedBlue}}" />
-        <option name="BACKGROUND" value="{{dimBackground}}" />
+        <option name="BACKGROUND" value="{{foreground}}" />
       </value>
     </option>
     <option name="INLINE_PARAMETER_HINT_CURRENT">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
         <option name="BACKGROUND" value="aec6cf" />
       </value>
     </option>
@@ -600,12 +600,12 @@
     </option>
     <option name="MARKDOWN_HTML_BLOCK">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
       </value>
     </option>
     <option name="MARKDOWN_INLINE_HTML">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
       </value>
     </option>
     <option name="MARKDOWN_LINK_DESTINATION">
@@ -613,12 +613,12 @@
     </option>
     <option name="MARKDOWN_LIST_ITEM">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
       </value>
     </option>
     <option name="MARKDOWN_TEXT">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
       </value>
     </option>
     <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
@@ -637,7 +637,7 @@
     </option>
     <option name="PROPERTIES.KEY">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
       </value>
     </option>
     <option name="PROPERTIES.VALUE">
@@ -683,7 +683,7 @@
     </option>
     <option name="SPY-JS.PATH_LEVEL_TWO">
       <value>
-        <option name="EFFECT_COLOR" value="{{foreground}}" />
+        <option name="EFFECT_COLOR" value="{{background}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -704,8 +704,8 @@
     </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="{{foreground}}" />
-        <option name="BACKGROUND" value="{{dimBackground}}" />
+        <option name="FOREGROUND" value="{{background}}" />
+        <option name="BACKGROUND" value="{{foreground}}" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">

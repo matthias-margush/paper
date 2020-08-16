@@ -1,11 +1,11 @@
 <idea-plugin>
-  <id>com.margush.{{theme}}</id>
-  <name>{{theme}}</name>
+  <id>com.margush.CI Light</id>
+  <name>CI Light</name>
   <version>1.0</version>
   <vendor email="matthias.margush@me.com" url="http://github.com/matthias-margush/paper">Matthias Margush</vendor>
 
   <description><![CDATA[
-  {{description}}
+  A CI theme for Jetbrains IDEs.
     ]]></description>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="{{uuid}}" path="/{{theme}}.theme.json"/>
+    <themeProvider id="84FAEF97-9884-45D7-B405-6807505D130D" path="/CI Light.theme.json"/>
   </extensions>
 
   <actions>

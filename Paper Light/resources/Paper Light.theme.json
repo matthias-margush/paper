@@ -1,22 +1,22 @@
 {
-  "name": "Paper",
+  "name": "Paper Light",
   "author": "Matthias C. Margush",
-  "editorScheme": "/Paper.xml",
+  "editorScheme": "/Paper Light.xml",
   "dark": false,
   "icons": {
     "ColorPalette": {
       "Actions.Blue": "#555577",
       "Actions.Green": "#557755",
-      "Actions.Grey": "#999999",
-      "Actions.GreyInline": "#999999",
-      "Actions.GreyInline.Dark": "#999999",
+      "Actions.Grey": "#191919",
+      "Actions.GreyInline": "#191919",
+      "Actions.GreyInline.Dark": "#191919",
       "Actions.Red": "#775555",
       "Actions.Yellow": "#777755",
       "Objects.BlackText": "#2A2A2A",
       "Objects.Blue": "#555577",
       "Objects.Green": "#557755",
       "Objects.GreenAndroid": "#557755",
-      "Objects.Grey": "#999999",
+      "Objects.Grey": "#191919",
       "Objects.Pink": "#775555",
       "Objects.Purple": "#775577",
       "Objects.Red": "#775555",
@@ -52,9 +52,9 @@
       "default.endBackground": "#2A2A2A"
     },
     "ComboBox": {
-      "background": "#DDD9CC",
-      "nonEditableBackground": "#DDD9CC",
-      "selectionBackground": "#DDD9CC",
+      "background": "#E8E6E2",
+      "nonEditableBackground": "#E8E6E2",
+      "selectionBackground": "#E8E6E2",
       "foreground": "#2A2A2A",
       "disabledForeground": "#2A2A2A",
       "modifiedItemForeground": "#2A2A2A",
@@ -70,8 +70,8 @@
       "borderColor": "#DDD9CC"
     },
     "EditorTabs": {
-      "underlineColor": "#999999",
-      "inactiveUnderlineColor": "#999999",
+      "underlineColor": "#191919",
+      "inactiveUnderlineColor": "#191919",
       "hoverBackground": "#E8E6E2",
       "underlinedTabBackground": "#E8E6E2",
       "background": "#E8E6E2",
@@ -79,18 +79,18 @@
       "underlineHeight": 3
     },
     "FileColor": {
-      "Blue": "#AAAA88",
-      "Green": "#AA88AA",
-      "Orange": "#88AAAA",
-      "Rose": "#88AAAA",
-      "Violet": "#88AA88",
-      "Yellow": "#8888AA"
+      "Blue": "#555577",
+      "Green": "#557755",
+      "Orange": "#775555",
+      "Rose": "#775555",
+      "Violet": "#775577",
+      "Yellow": "#777755"
     },
     "Link": {
       "activeForeground": "#555577",
       "hoverForeground": "#555577",
       "pressedForeground": "#555577",
-      "secondaryForeground": "#AAAA88",
+      "secondaryForeground": "#D5D5F7",
       "visitedForeground": "#555577"
     },
     "List": {

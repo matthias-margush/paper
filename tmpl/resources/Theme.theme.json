@@ -5,24 +5,24 @@
   "dark": {{dark}},
   "icons": {
     "ColorPalette": {
-      "Actions.Blue": "{{blue}}",
-      "Actions.Green": "{{green}}",
+      "Actions.Blue": "{{invertedBlue}}",
+      "Actions.Green": "{{invertedGreen}}",
       "Actions.Grey": "{{grey}}",
       "Actions.GreyInline": "{{grey}}",
       "Actions.GreyInline.Dark": "{{grey}}",
-      "Actions.Red": "{{red}}",
-      "Actions.Yellow": "{{yellow}}",
+      "Actions.Red": "{{invertedRed}}",
+      "Actions.Yellow": "{{invertedYellow}}",
       "Objects.BlackText": "{{foreground}}",
-      "Objects.Blue": "{{blue}}",
-      "Objects.Green": "{{green}}",
-      "Objects.GreenAndroid": "{{green}}",
+      "Objects.Blue": "{{invertedBlue}}",
+      "Objects.Green": "{{invertedGreen}}",
+      "Objects.GreenAndroid": "{{invertedGreen}}",
       "Objects.Grey": "{{grey}}",
-      "Objects.Pink": "{{red}}",
-      "Objects.Purple": "{{purple}}",
-      "Objects.Red": "{{red}}",
-      "Objects.RedStatus": "{{red}}",
-      "Objects.Yellow": "{{yellow}}",
-      "Objects.YellowDark": "{{yellow}}"
+      "Objects.Pink": "{{invertedRed}}",
+      "Objects.Purple": "{{invertedPurple}}",
+      "Objects.Red": "{{invertedRed}}",
+      "Objects.RedStatus": "{{invertedRed}}",
+      "Objects.Yellow": "{{invertedYellow}}",
+      "Objects.YellowDark": "{{invertedYellow}}"
     }
   },
   "ui": {
@@ -31,30 +31,30 @@
       "background": "{{background}}",
       "borderColor": "{{background}}"
     },
-    "Borders.color": "{{highlight}}",
+    "Borders.color": "{{invertedHighlight}}",
     "Button": {
       "foreground": "{{foreground}}",
-      "disabledText": "{{highlight}}",
+      "disabledText": "{{invertedHighlight}}",
       "background": "{{background}}",
       "startBackground": "{{background}}",
       "endBackground": "{{background}}",
       "shadowColor": "{{background}}",
-      "default.startBorderColor": "{{highlight}}",
-      "default.endBorderColor": "{{highlight}}",
-      "default.focusedBorderColor": "{{highlight}}",
-      "startBorderColor": "{{highlight}}",
-      "endBorderColor": "{{highlight}}",
-      "focusedBorderColor": "{{highlight}}",
-      "disabledBorderColor": "{{highlight}}",
+      "default.startBorderColor": "{{invertedHighlight}}",
+      "default.endBorderColor": "{{invertedHighlight}}",
+      "default.focusedBorderColor": "{{invertedHighlight}}",
+      "startBorderColor": "{{invertedHighlight}}",
+      "endBorderColor": "{{invertedHighlight}}",
+      "focusedBorderColor": "{{invertedHighlight}}",
+      "disabledBorderColor": "{{invertedHighlight}}",
       "default.foreground": "{{background}}",
       "default.shadowColor": "{{background}}",
       "default.startBackground": "{{foreground}}",
       "default.endBackground": "{{foreground}}"
     },
     "ComboBox": {
-      "background": "{{highlight}}",
-      "nonEditableBackground": "{{highlight}}",
-      "selectionBackground": "{{highlight}}",
+      "background": "{{background}}",
+      "nonEditableBackground": "{{background}}",
+      "selectionBackground": "{{background}}",
       "foreground": "{{foreground}}",
       "disabledForeground": "{{foreground}}",
       "modifiedItemForeground": "{{foreground}}",
@@ -67,7 +67,7 @@
       "matchForeground": "{{dimForeground}}"
     },
     "Component": {
-      "borderColor": "{{highlight}}"
+      "borderColor": "{{invertedHighlight}}"
     },
     "EditorTabs": {
       "underlineColor": "{{grey}}",
@@ -87,11 +87,11 @@
       "Yellow": "{{invertedYellow}}"
     },
     "Link": {
-      "activeForeground": "{{blue}}",
-      "hoverForeground": "{{blue}}",
-      "pressedForeground": "{{blue}}",
-      "secondaryForeground": "{{invertedBlue}}",
-      "visitedForeground": "{{blue}}"
+      "activeForeground": "{{invertedBlue}}",
+      "hoverForeground": "{{invertedBlue}}",
+      "pressedForeground": "{{invertedBlue}}",
+      "secondaryForeground": "{{blue}}",
+      "visitedForeground": "{{invertedBlue}}"
     },
     "List": {
       "foreground": "{{foreground}}",
@@ -99,19 +99,19 @@
       "background": "{{background}}"
     },
     "Plugins": {
-      "SearchField.borderColor": "{{highlight}}",
+      "SearchField.borderColor": "{{invertedHighlight}}",
       "SearchField.background": "{{dimBackground}}",
       "background": "{{background}}",
       "lightSelectionBackground": "{{dimBackground}}",
       "Button": {
         "installBackground": "{{background}}",
         "installForeground": "{{foreground}}",
-        "installBorderColor": "{{highlight}}",
+        "installBorderColor": "{{invertedHighlight}}",
         "installFillBackground": "{{foreground}}",
         "installFillForeground": "{{background}}",
-        "updateBackground": "{{green}}",
+        "updateBackground": "{{invertedGreen}}",
         "updateForeground": "{{background}}",
-        "updateBorderColor": "{{highlight}}"
+        "updateBorderColor": "{{invertedHighlight}}"
       }
     },
     "ScrollBar.Mac": {
@@ -132,7 +132,7 @@
     "ScrollBar.Mac.hoverThumbColor": "{{background}}",
     "ScrollBar.Mac.trackColor": "{{background}}",
     "TabbedPane": {
-      "underlineColor": "{{highlight}}",
+      "underlineColor": "{{invertedHighlight}}",
       "hoverColor": "{{background}}"
     },
     "TextArea": {
@@ -173,8 +173,8 @@
     "Tree": {
       "foreground": "{{foreground}}",
       "selectionForeground": "{{foreground}}",
-      "selectionBackground": "{{highlight}}",
-      "selectionInactiveBackground": "{{highlight}}",
+      "selectionBackground": "{{invertedHighlight}}",
+      "selectionInactiveBackground": "{{invertedHighlight}}",
       "background": "{{dimBackground}}"
     }
   }

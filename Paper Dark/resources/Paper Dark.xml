@@ -1,48 +1,48 @@
-<scheme name="Paper" version="142" parent_scheme="Default">
+<scheme name="Paper Dark" version="142" parent_scheme="Default">
   <metaInfo>
     <property name="created">2020-08-08T14:27:33</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2020.2.0.0</property>
     <property name="modified">2020-08-08T14:27:49</property>
-    <property name="originalScheme">Paper</property>
+    <property name="originalScheme">Paper Dark</property>
   </metaInfo>
   <colors>
-    <option name="ADDED_LINES_COLOR" value="aa88aa" />
+    <option name="ADDED_LINES_COLOR" value="d5f7d5" />
     <option name="ANNOTATIONS_COLOR" value="555577" />
     <option name="CARET_COLOR" value="aaaaaa" />
     <option name="CARET_ROW_COLOR" value="" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="f8f6f2" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="e8e6e2" />
     <option name="DELETED_LINES_COLOR" value="ddd9cc" />
     <option name="DIFF_SEPARATORS_BACKGROUND" value="ddd9cc" />
-    <option name="DOCUMENTATION_COLOR" value="e8e6e2" />
+    <option name="DOCUMENTATION_COLOR" value="3a3a3a" />
     <option name="DOC_COMMENT_GUIDE" value="" />
     <option name="DOC_COMMENT_LINK" value="ddd9cc" />
     <option name="ERROR_HINT" value="775555" />
-    <option name="FILESTATUS_ADDED" value="557755" />
-    <option name="FILESTATUS_COPIED" value="557755" />
-    <option name="FILESTATUS_DELETED" value="999999" />
-    <option name="FILESTATUS_HIJACKED" value="777755" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="775555" />
+    <option name="FILESTATUS_ADDED" value="d5f7d5" />
+    <option name="FILESTATUS_COPIED" value="d5f7d5" />
+    <option name="FILESTATUS_DELETED" value="191919" />
+    <option name="FILESTATUS_HIJACKED" value="f7f7d5" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="f7d5d5" />
     <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="775555" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="775555" />
-    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="775555" />
-    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="557755" />
-    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_OBSTRUCTED" value="777755" />
-    <option name="FILESTATUS_IDEA_SVN_REPLACED" value="557755" />
-    <option name="FILESTATUS_MERGED" value="555577" />
-    <option name="FILESTATUS_MODIFIED" value="555577" />
-    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="555577" />
-    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="555577" />
-    <option name="FILESTATUS_OBSOLETE" value="777755" />
-    <option name="FILESTATUS_RENAMED" value="557755" />
-    <option name="FILESTATUS_SWITCHED" value="557755" />
-    <option name="FILESTATUS_UNKNOWN" value="775555" />
-    <option name="FILESTATUS_addedOutside" value="557755" />
-    <option name="FILESTATUS_changelistConflict" value="775555" />
-    <option name="FILESTATUS_modifiedOutside" value="555577" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="f7d5d5" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="f7d5d5" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="f7d5d5" />
+    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="d5f7d5" />
+    <option name="FILESTATUS_IDEA_SVN_FILESTATUS_OBSTRUCTED" value="f7f7d5" />
+    <option name="FILESTATUS_IDEA_SVN_REPLACED" value="d5f7d5" />
+    <option name="FILESTATUS_MERGED" value="d5d5f7" />
+    <option name="FILESTATUS_MODIFIED" value="d5d5f7" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="d5d5f7" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="d5d5f7" />
+    <option name="FILESTATUS_OBSOLETE" value="f7f7d5" />
+    <option name="FILESTATUS_RENAMED" value="d5f7d5" />
+    <option name="FILESTATUS_SWITCHED" value="d5f7d5" />
+    <option name="FILESTATUS_UNKNOWN" value="f7d5d5" />
+    <option name="FILESTATUS_addedOutside" value="d5f7d5" />
+    <option name="FILESTATUS_changelistConflict" value="f7d5d5" />
+    <option name="FILESTATUS_modifiedOutside" value="d5d5f7" />
     <option name="FOLDED_TEXT_BORDER_COLOR" value="ddd9cc" />
-    <option name="GUTTER_BACKGROUND" value="f8f6f2" />
+    <option name="GUTTER_BACKGROUND" value="e8e6e2" />
     <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="557755" />
     <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="ddd9cc" />
     <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="555577" />
@@ -51,8 +51,8 @@
     <option name="LINE_NUMBERS_COLOR" value="ddd9cc" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="ddd9cc" />
     <option name="METHOD_SEPARATORS_COLOR" value="" />
-    <option name="MODIFIED_LINES_COLOR" value="aaaa88" />
-    <option name="NOTIFICATION_BACKGROUND" value="aaaa88" />
+    <option name="MODIFIED_LINES_COLOR" value="d5d5f7" />
+    <option name="NOTIFICATION_BACKGROUND" value="d5d5f7" />
     <option name="PROMOTION_PANE" value="555577" />
     <option name="QUESTION_HINT" value="557777" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="" />
@@ -66,11 +66,11 @@
     <option name="SEPARATOR_BELOW_COLOR" value="ddd9cc" />
     <option name="SOFT_WRAP_SIGN_COLOR" value="ddd9cc" />
     <option name="ScrollBar.Mac.thumbColor" value="" />
-    <option name="VCS_ANNOTATIONS_COLOR_1" value="aa88aa" />
+    <option name="VCS_ANNOTATIONS_COLOR_1" value="d5f7d5" />
     <option name="VCS_ANNOTATIONS_COLOR_2" value="ddd9cc" />
-    <option name="VCS_ANNOTATIONS_COLOR_3" value="aaaa88" />
-    <option name="VCS_ANNOTATIONS_COLOR_4" value="8888aa" />
-    <option name="VCS_ANNOTATIONS_COLOR_5" value="88aaaa" />
+    <option name="VCS_ANNOTATIONS_COLOR_3" value="d5d5f7" />
+    <option name="VCS_ANNOTATIONS_COLOR_4" value="f7f7d5" />
+    <option name="VCS_ANNOTATIONS_COLOR_5" value="f7d5d5" />
     <option name="VISUAL_INDENT_GUIDE" value="ddd9cc" />
     <option name="WHITESPACES" value="ddd9cc" />
     <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="ddd9cc" />
@@ -97,14 +97,14 @@
     </option>
     <option name="BREADCRUMBS_CURRENT">
       <value>
-        <option name="FOREGROUND" value="3a3a3a" />
-        <option name="BACKGROUND" value="e8e6e2" />
+        <option name="FOREGROUND" value="f8f6f2" />
+        <option name="BACKGROUND" value="3a3a3a" />
       </value>
     </option>
     <option name="BREADCRUMBS_HOVERED">
       <value>
-        <option name="FOREGROUND" value="3a3a3a" />
-        <option name="BACKGROUND" value="e8e6e2" />
+        <option name="FOREGROUND" value="f8f6f2" />
+        <option name="BACKGROUND" value="3a3a3a" />
       </value>
     </option>
     <option name="CODE_LENS_BORDER_COLOR">
@@ -413,25 +413,25 @@
     </option>
     <option name="DIFF_CONFLICT">
       <value>
-        <option name="BACKGROUND" value="8888aa" />
+        <option name="BACKGROUND" value="f7f7d5" />
         <option name="ERROR_STRIPE_COLOR" value="777755" />
       </value>
     </option>
     <option name="DIFF_DELETED">
       <value>
-        <option name="BACKGROUND" value="88aaaa" />
+        <option name="BACKGROUND" value="f7d5d5" />
         <option name="ERROR_STRIPE_COLOR" value="775555" />
       </value>
     </option>
     <option name="DIFF_INSERTED">
       <value>
-        <option name="BACKGROUND" value="aa88aa" />
+        <option name="BACKGROUND" value="d5f7d5" />
         <option name="ERROR_STRIPE_COLOR" value="557755" />
       </value>
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="BACKGROUND" value="88aaaa" />
+        <option name="BACKGROUND" value="f7d5d5" />
         <option name="ERROR_STRIPE_COLOR" value="775555" />
       </value>
     </option>
@@ -457,7 +457,7 @@
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="555577" />
-        <option name="BACKGROUND" value="e8e6e2" />
+        <option name="BACKGROUND" value="3a3a3a" />
         <option name="EFFECT_COLOR" value="555577" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -483,7 +483,7 @@
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="f8f6f2" />
+        <option name="BACKGROUND" value="e8e6e2" />
         <option name="EFFECT_COLOR" value="ddd9cc" />
         <option name="ERROR_STRIPE_COLOR" value="ddd9cc" />
       </value>
@@ -506,8 +506,8 @@
     </option>
     <option name="INLINE_PARAMETER_HINT">
       <value>
-        <option name="FOREGROUND" value="aaaa88" />
-        <option name="BACKGROUND" value="f8f6f2" />
+        <option name="FOREGROUND" value="d5d5f7" />
+        <option name="BACKGROUND" value="e8e6e2" />
       </value>
     </option>
     <option name="INLINE_PARAMETER_HINT_CURRENT">
@@ -527,17 +527,17 @@
     </option>
     <option name="KOTLIN_SMART_CAST_RECEIVER">
       <value>
-        <option name="BACKGROUND" value="aa88aa" />
+        <option name="BACKGROUND" value="d5f7d5" />
       </value>
     </option>
     <option name="KOTLIN_SMART_CAST_VALUE">
       <value>
-        <option name="BACKGROUND" value="aa88aa" />
+        <option name="BACKGROUND" value="d5f7d5" />
       </value>
     </option>
     <option name="KOTLIN_SMART_CONSTANT">
       <value>
-        <option name="BACKGROUND" value="aa88aa" />
+        <option name="BACKGROUND" value="d5f7d5" />
       </value>
     </option>
     <option name="LINE_FULL_COVERAGE">
@@ -665,19 +665,19 @@
     </option>
     <option name="SPY-JS.EXCEPTION">
       <value>
-        <option name="BACKGROUND" value="88aaaa" />
+        <option name="BACKGROUND" value="f7d5d5" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
     <option name="SPY-JS.FUNCTION_SCOPE">
       <value>
-        <option name="BACKGROUND" value="8888aa" />
+        <option name="BACKGROUND" value="f7f7d5" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
     <option name="SPY-JS.PATH_LEVEL_ONE">
       <value>
-        <option name="BACKGROUND" value="aa88aa" />
+        <option name="BACKGROUND" value="d5f7d5" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -689,7 +689,7 @@
     </option>
     <option name="SPY-JS.PROGRAM_SCOPE">
       <value>
-        <option name="BACKGROUND" value="8888aa" />
+        <option name="BACKGROUND" value="f7f7d5" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -705,7 +705,7 @@
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="2a2a2a" />
-        <option name="BACKGROUND" value="f8f6f2" />
+        <option name="BACKGROUND" value="e8e6e2" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
@@ -721,7 +721,7 @@
     </option>
     <option name="TS.TYPE_GUARD">
       <value>
-        <option name="BACKGROUND" value="aa88aa" />
+        <option name="BACKGROUND" value="d5f7d5" />
       </value>
     </option>
     <option name="TS.TYPE_PARAMETER">

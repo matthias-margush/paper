@@ -1,11 +1,11 @@
 <idea-plugin>
-  <id>com.margush.CIDark</id>
-  <name>CIDark</name>
+  <id>com.margush.CI Dark</id>
+  <name>CI Dark</name>
   <version>1.0</version>
   <vendor email="matthias.margush@me.com" url="http://github.com/matthias-margush/paper">Matthias Margush</vendor>
 
   <description><![CDATA[
-  A blackboard-inspired theme for Jetbrains IDEs.
+  A CI theme for Jetbrains IDEs.
     ]]></description>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="855389ec-4aa1-4245-9f34-deff82212b68" path="/CIDark.theme.json"/>
+    <themeProvider id="0798AC7F-3DCD-4C13-9648-8F7D41188F8C" path="/CI Dark.theme.json"/>
   </extensions>
 
   <actions>

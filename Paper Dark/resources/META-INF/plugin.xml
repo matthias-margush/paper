@@ -1,11 +1,11 @@
 <idea-plugin>
-  <id>com.margush.Board</id>
-  <name>Board</name>
+  <id>com.margush.Paper Dark</id>
+  <name>Paper Dark</name>
   <version>1.0</version>
   <vendor email="matthias.margush@me.com" url="http://github.com/matthias-margush/paper">Matthias Margush</vendor>
 
   <description><![CDATA[
-  A blackboard-inspired theme for Jetbrains IDEs.
+  A paper-inspired theme for Jetbrains IDEs.
     ]]></description>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="855389ec-4aa1-4245-9f34-deff82212b68" path="/Board.theme.json"/>
+    <themeProvider id="E429D584-602D-4199-A333-8FA71E417970" path="/Paper Dark.theme.json"/>
   </extensions>
 
   <actions>

@@ -1,20 +1,52 @@
 #!/usr/local/bin/bash
 
-invert() {
-  local color="$1"
-  hex="0x${color:1}"
-  printf "#%06X" $((0xFFFFFF - "$hex"))
+invert_basic_color() {
+  local hex="$1"
+
+  if ((hex > 0x7F)); then
+    printf "%02X" "$((hex - 0x80))"
+  else
+    printf "%02X" "$((0xFF - (0x7F - hex)))"
+  fi
 }
 
-for theme in themes/*.sh
-do
-  source "$theme"
+invert() {
+  local color="$1"
+  local hex="0x${color:1}"
 
+  local red="$(((hex & 0xFF0000) >> 16))"
+  local green="$(((hex & 0x00FF00) >> 8))"
+  local blue="$((hex & 0x0000FF))"
+
+  red="$(invert_basic_color $red)"
+  green="$(invert_basic_color $green)"
+  blue="$(invert_basic_color $blue)"
+
+  printf "#%s%s%s" "$red" "$green" "$blue"
+}
+
+gen_theme() {
+  colors['invertedHighlight']=$(invert ${colors['highlight']})
+  colors['invertedGrey']=$(invert ${colors['grey']})
   colors['invertedRed']=$(invert ${colors['red']})
   colors['invertedGreen']=$(invert ${colors['green']})
   colors['invertedBlue']=$(invert ${colors['blue']})
   colors['invertedPurple']=$(invert ${colors['purple']})
   colors['invertedYellow']=$(invert ${colors['yellow']})
+
+  local theme="$theme"
+  local uuid=""
+  if [ "$dark" == "true" ]; then
+    dark="false"
+    theme="${theme} Light"
+    uuid="$light_uuid"
+  else
+    dark="true"
+    theme="${theme} Dark"
+    uuid="$dark_uuid"
+  fi
+
+  printf "Generating %s\n" "$theme"
 
   mkdir -p "$theme/resources/META-INF"
   ide_substitutions=""
@@ -40,6 +72,47 @@ do
 
   sed "$editor_substitutions" "tmpl/resources/Theme.xml" >"$theme/resources/$theme.xml"
 
-  plugin_xml_substitutions="s/{{theme}}/$theme/g; s/{{description}}/$description/"
+  plugin_xml_substitutions="s/{{theme}}/$theme/g; s/{{description}}/$description/; s/{{uuid}}/$uuid/g"
   sed "$plugin_xml_substitutions" "tmpl/resources/META-INF/plugin.xml" >"$theme/resources/META-INF/plugin.xml"
+}
+
+gen_all_themes() {
+for theme in themes/*.sh; do
+  source "$theme"
+
+  gen_theme
+
+  # invert
+
+  colors["highlight"]="${colors['invertedHighlight']}"
+
+  local foreground="${colors['foreground']}"
+  local background="${colors['background']}"
+  local dimBackground="${colors['dimBackground']}"
+  local dimForeground="${colors['dimForeground']}"
+
+  colors["foreground"]="$background"
+  colors["dimForeground"]="$dimBackground"
+
+  colors["background"]="$foreground"
+  colors["dimBackground"]="$dimForeground"
+
+  colors["grey"]=$(invert "${colors['grey']}")
+  colors["red"]=$(invert "${colors['red']}")
+  colors["green"]=$(invert "${colors['green']}")
+  colors["blue"]=$(invert "${colors['blue']}")
+  colors["purple"]=$(invert "${colors['purple']}")
+  colors["yellow"]=$(invert "${colors['yellow']}")
+
+#  if [ "$dark" == "true" ]; then
+#    dark="false"
+#  else
+#    dark="true"
+#  fi
+
+  gen_theme
 done
+
+}
+
+gen_all_themes

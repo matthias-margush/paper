@@ -1,28 +1,28 @@
 {
-  "name": "Board",
+  "name": "Paper Dark",
   "author": "Matthias C. Margush",
-  "editorScheme": "/Board.xml",
+  "editorScheme": "/Paper Dark.xml",
   "dark": true,
   "icons": {
     "ColorPalette": {
-      "Actions.Blue": "#CCCCDD",
-      "Actions.Green": "#CCDDCC",
+      "Actions.Blue": "#D5D5F7",
+      "Actions.Green": "#D5F7D5",
       "Actions.Grey": "#999999",
       "Actions.GreyInline": "#999999",
       "Actions.GreyInline.Dark": "#999999",
-      "Actions.Red": "#DDCCCC",
-      "Actions.Yellow": "#DDDDCC",
+      "Actions.Red": "#F7D5D5",
+      "Actions.Yellow": "#F7F7D5",
       "Objects.BlackText": "#E8E6E2",
-      "Objects.Blue": "#CCCCDD",
-      "Objects.Green": "#CCDDCC",
-      "Objects.GreenAndroid": "#CCDDCC",
+      "Objects.Blue": "#D5D5F7",
+      "Objects.Green": "#D5F7D5",
+      "Objects.GreenAndroid": "#D5F7D5",
       "Objects.Grey": "#999999",
-      "Objects.Pink": "#DDCCCC",
-      "Objects.Purple": "#DDCCDD",
-      "Objects.Red": "#DDCCCC",
-      "Objects.RedStatus": "#DDCCCC",
-      "Objects.Yellow": "#DDDDCC",
-      "Objects.YellowDark": "#DDDDCC"
+      "Objects.Pink": "#F7D5D5",
+      "Objects.Purple": "#F7D5F7",
+      "Objects.Red": "#F7D5D5",
+      "Objects.RedStatus": "#F7D5D5",
+      "Objects.Yellow": "#F7F7D5",
+      "Objects.YellowDark": "#F7F7D5"
     }
   },
   "ui": {
@@ -31,30 +31,30 @@
       "background": "#2A2A2A",
       "borderColor": "#2A2A2A"
     },
-    "Borders.color": "#222633",
+    "Borders.color": "#5D594C",
     "Button": {
       "foreground": "#E8E6E2",
-      "disabledText": "#222633",
+      "disabledText": "#5D594C",
       "background": "#2A2A2A",
       "startBackground": "#2A2A2A",
       "endBackground": "#2A2A2A",
       "shadowColor": "#2A2A2A",
-      "default.startBorderColor": "#222633",
-      "default.endBorderColor": "#222633",
-      "default.focusedBorderColor": "#222633",
-      "startBorderColor": "#222633",
-      "endBorderColor": "#222633",
-      "focusedBorderColor": "#222633",
-      "disabledBorderColor": "#222633",
+      "default.startBorderColor": "#5D594C",
+      "default.endBorderColor": "#5D594C",
+      "default.focusedBorderColor": "#5D594C",
+      "startBorderColor": "#5D594C",
+      "endBorderColor": "#5D594C",
+      "focusedBorderColor": "#5D594C",
+      "disabledBorderColor": "#5D594C",
       "default.foreground": "#2A2A2A",
       "default.shadowColor": "#2A2A2A",
       "default.startBackground": "#E8E6E2",
       "default.endBackground": "#E8E6E2"
     },
     "ComboBox": {
-      "background": "#222633",
-      "nonEditableBackground": "#222633",
-      "selectionBackground": "#222633",
+      "background": "#2A2A2A",
+      "nonEditableBackground": "#2A2A2A",
+      "selectionBackground": "#2A2A2A",
       "foreground": "#E8E6E2",
       "disabledForeground": "#E8E6E2",
       "modifiedItemForeground": "#E8E6E2",
@@ -67,7 +67,7 @@
       "matchForeground": "#F8F6F2"
     },
     "Component": {
-      "borderColor": "#222633"
+      "borderColor": "#5D594C"
     },
     "EditorTabs": {
       "underlineColor": "#999999",
@@ -79,19 +79,19 @@
       "underlineHeight": 3
     },
     "FileColor": {
-      "Blue": "#333322",
-      "Green": "#332233",
-      "Orange": "#223333",
-      "Rose": "#223333",
-      "Violet": "#223322",
-      "Yellow": "#222233"
+      "Blue": "#D5D5F7",
+      "Green": "#D5F7D5",
+      "Orange": "#F7D5D5",
+      "Rose": "#F7D5D5",
+      "Violet": "#F7D5F7",
+      "Yellow": "#F7F7D5"
     },
     "Link": {
-      "activeForeground": "#CCCCDD",
-      "hoverForeground": "#CCCCDD",
-      "pressedForeground": "#CCCCDD",
-      "secondaryForeground": "#333322",
-      "visitedForeground": "#CCCCDD"
+      "activeForeground": "#D5D5F7",
+      "hoverForeground": "#D5D5F7",
+      "pressedForeground": "#D5D5F7",
+      "secondaryForeground": "#555577",
+      "visitedForeground": "#D5D5F7"
     },
     "List": {
       "foreground": "#E8E6E2",
@@ -99,19 +99,19 @@
       "background": "#2A2A2A"
     },
     "Plugins": {
-      "SearchField.borderColor": "#222633",
+      "SearchField.borderColor": "#5D594C",
       "SearchField.background": "#3A3A3A",
       "background": "#2A2A2A",
       "lightSelectionBackground": "#3A3A3A",
       "Button": {
         "installBackground": "#2A2A2A",
         "installForeground": "#E8E6E2",
-        "installBorderColor": "#222633",
+        "installBorderColor": "#5D594C",
         "installFillBackground": "#E8E6E2",
         "installFillForeground": "#2A2A2A",
-        "updateBackground": "#CCDDCC",
+        "updateBackground": "#D5F7D5",
         "updateForeground": "#2A2A2A",
-        "updateBorderColor": "#222633"
+        "updateBorderColor": "#5D594C"
       }
     },
     "ScrollBar.Mac": {
@@ -132,7 +132,7 @@
     "ScrollBar.Mac.hoverThumbColor": "#2A2A2A",
     "ScrollBar.Mac.trackColor": "#2A2A2A",
     "TabbedPane": {
-      "underlineColor": "#222633",
+      "underlineColor": "#5D594C",
       "hoverColor": "#2A2A2A"
     },
     "TextArea": {
@@ -173,8 +173,8 @@
     "Tree": {
       "foreground": "#E8E6E2",
       "selectionForeground": "#E8E6E2",
-      "selectionBackground": "#222633",
-      "selectionInactiveBackground": "#222633",
+      "selectionBackground": "#5D594C",
+      "selectionInactiveBackground": "#5D594C",
       "background": "#3A3A3A"
     }
   }

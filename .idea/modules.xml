@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Board/Board.iml" filepath="$PROJECT_DIR$/Board/Board.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CIDark/CIDark.iml" filepath="$PROJECT_DIR$/CIDark/CIDark.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Paper/Paper.iml" filepath="$PROJECT_DIR$/Paper/Paper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CI Dark/CI Dark.iml" filepath="$PROJECT_DIR$/CI Dark/CI Dark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CI Light/CI Light.iml" filepath="$PROJECT_DIR$/CI Light/CI Light.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Paper Dark/Paper Dark.iml" filepath="$PROJECT_DIR$/Paper Dark/Paper Dark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Paper Light/Paper Light.iml" filepath="$PROJECT_DIR$/Paper Light/Paper Light.iml" />
     </modules>
   </component>
 </project>
