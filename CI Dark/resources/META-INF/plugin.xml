@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="0798AC7F-3DCD-4C13-9648-8F7D41188F8C" path="/CI Dark.theme.json"/>
+    <themeProvider id="5090CFF1-E0E0-4B05-9A64-0854798AF1C2" path="/CI Dark.theme.json"/>
   </extensions>
 
   <actions>

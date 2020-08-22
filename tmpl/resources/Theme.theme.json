@@ -7,16 +7,16 @@
     "ColorPalette": {
       "Actions.Blue": "{{invertedBlue}}",
       "Actions.Green": "{{invertedGreen}}",
-      "Actions.Grey": "{{grey}}",
-      "Actions.GreyInline": "{{grey}}",
-      "Actions.GreyInline.Dark": "{{grey}}",
+      "Actions.Grey": "{{invertedGrey}}",
+      "Actions.GreyInline": "{{invertedGrey}}",
+      "Actions.GreyInline.Dark": "{{invertedGrey}}",
       "Actions.Red": "{{invertedRed}}",
       "Actions.Yellow": "{{invertedYellow}}",
       "Objects.BlackText": "{{foreground}}",
       "Objects.Blue": "{{invertedBlue}}",
       "Objects.Green": "{{invertedGreen}}",
       "Objects.GreenAndroid": "{{invertedGreen}}",
-      "Objects.Grey": "{{grey}}",
+      "Objects.Grey": "{{invertedGrey}}",
       "Objects.Pink": "{{invertedRed}}",
       "Objects.Purple": "{{invertedPurple}}",
       "Objects.Red": "{{invertedRed}}",
@@ -27,18 +27,18 @@
   },
   "ui": {
     "*": {
-      "foreground": "{{foreground}}",
-      "background": "{{background}}",
-      "borderColor": "{{background}}"
+      "foreground": "{{background}}",
+      "background": "{{foreground}}",
+      "borderColor": "{{foreground}}"
     },
     "Borders.color": "{{invertedHighlight}}",
     "Button": {
-      "foreground": "{{foreground}}",
+      "foreground": "{{background}}",
       "disabledText": "{{invertedHighlight}}",
-      "background": "{{background}}",
-      "startBackground": "{{background}}",
-      "endBackground": "{{background}}",
-      "shadowColor": "{{background}}",
+      "background": "{{foreground}}",
+      "startBackground": "{{foreground}}",
+      "endBackground": "{{foreground}}",
+      "shadowColor": "{{foreground}}",
       "default.startBorderColor": "{{invertedHighlight}}",
       "default.endBorderColor": "{{invertedHighlight}}",
       "default.focusedBorderColor": "{{invertedHighlight}}",
@@ -46,36 +46,39 @@
       "endBorderColor": "{{invertedHighlight}}",
       "focusedBorderColor": "{{invertedHighlight}}",
       "disabledBorderColor": "{{invertedHighlight}}",
-      "default.foreground": "{{background}}",
-      "default.shadowColor": "{{background}}",
-      "default.startBackground": "{{foreground}}",
-      "default.endBackground": "{{foreground}}"
+      "default.foreground": "{{foreground}}",
+      "default.shadowColor": "{{foreground}}",
+      "default.startBackground": "{{background}}",
+      "default.endBackground": "{{background}}"
     },
+    "CheckBox": {
+      "foreground": "{{invertedGrey}}"
+      },
     "ComboBox": {
-      "background": "{{background}}",
-      "nonEditableBackground": "{{background}}",
-      "selectionBackground": "{{background}}",
-      "foreground": "{{foreground}}",
-      "disabledForeground": "{{foreground}}",
-      "modifiedItemForeground": "{{foreground}}",
-      "selectionForeground": "{{foreground}}"
+      "background": "{{foreground}}",
+      "nonEditableBackground": "{{foreground}}",
+      "selectionBackground": "{{foreground}}",
+      "foreground": "{{background}}",
+      "disabledForeground": "{{background}}",
+      "modifiedItemForeground": "{{background}}",
+      "selectionForeground": "{{background}}"
     },
     "CompletionPopup": {
-      "selectionBackground": "{{dimBackground}}",
-      "selectionInactiveBackground": "{{dimBackground}}",
-      "foreground": "{{foreground}}",
-      "matchForeground": "{{dimForeground}}"
+      "selectionBackground": "{{dimForeground}}",
+      "selectionInactiveBackground": "{{dimForeground}}",
+      "foreground": "{{background}}",
+      "matchForeground": "{{dimBackground}}"
     },
     "Component": {
       "borderColor": "{{invertedHighlight}}"
     },
     "EditorTabs": {
-      "underlineColor": "{{grey}}",
-      "inactiveUnderlineColor": "{{grey}}",
-      "hoverBackground": "{{background}}",
-      "underlinedTabBackground": "{{background}}",
-      "background": "{{background}}",
-      "borderColor": "{{background}}",
+      "underlineColor": "{{invertedGrey}}",
+      "inactiveUnderlineColor": "{{invertedGrey}}",
+      "hoverBackground": "{{foreground}}",
+      "underlinedTabBackground": "{{foreground}}",
+      "background": "{{foreground}}",
+      "borderColor": "{{foreground}}",
       "underlineHeight": 3
     },
     "FileColor": {
@@ -94,88 +97,88 @@
       "visitedForeground": "{{invertedBlue}}"
     },
     "List": {
-      "foreground": "{{foreground}}",
-      "selectionForeground": "{{foreground}}",
-      "background": "{{background}}"
+      "foreground": "{{background}}",
+      "selectionForeground": "{{background}}",
+      "background": "{{foreground}}"
     },
     "Plugins": {
       "SearchField.borderColor": "{{invertedHighlight}}",
-      "SearchField.background": "{{dimBackground}}",
-      "background": "{{background}}",
-      "lightSelectionBackground": "{{dimBackground}}",
+      "SearchField.background": "{{dimForeground}}",
+      "background": "{{foreground}}",
+      "lightSelectionBackground": "{{dimForeground}}",
       "Button": {
-        "installBackground": "{{background}}",
-        "installForeground": "{{foreground}}",
+        "installBackground": "{{foreground}}",
+        "installForeground": "{{background}}",
         "installBorderColor": "{{invertedHighlight}}",
-        "installFillBackground": "{{foreground}}",
-        "installFillForeground": "{{background}}",
+        "installFillBackground": "{{background}}",
+        "installFillForeground": "{{foreground}}",
         "updateBackground": "{{invertedGreen}}",
-        "updateForeground": "{{background}}",
+        "updateForeground": "{{foreground}}",
         "updateBorderColor": "{{invertedHighlight}}"
       }
     },
     "ScrollBar.Mac": {
-      "Transparent.hoverThumbBorderColor": "{{background}}",
-      "Transparent.hoverThumbColor": "{{background}}",
-      "Transparent.hoverTrackColor": "{{background}}",
-      "Transparent.thumbBorderColor": "{{background}}",
-      "Transparent.thumbColor": "{{background}}",
-      "Transparent.trackColor": "{{background}}",
-      "hoverThumbBorderColor": "{{background}}",
-      "hoverThumbColor": "{{background}}",
-      "hoverTrackColor": "{{background}}",
-      "thumbBorderColor": "{{background}}",
-      "thumbColor": "{{background}}",
-      "trackColor": "{{background}}"
+      "Transparent.hoverThumbBorderColor": "{{foreground}}",
+      "Transparent.hoverThumbColor": "{{foreground}}",
+      "Transparent.hoverTrackColor": "{{foreground}}",
+      "Transparent.thumbBorderColor": "{{foreground}}",
+      "Transparent.thumbColor": "{{foreground}}",
+      "Transparent.trackColor": "{{foreground}}",
+      "hoverThumbBorderColor": "{{foreground}}",
+      "hoverThumbColor": "{{foreground}}",
+      "hoverTrackColor": "{{foreground}}",
+      "thumbBorderColor": "{{foreground}}",
+      "thumbColor": "{{foreground}}",
+      "trackColor": "{{foreground}}"
     },
-    "ScrollBar.Mac.Transparent.thumbColor": "{{background}}",
-    "ScrollBar.Mac.hoverThumbColor": "{{background}}",
-    "ScrollBar.Mac.trackColor": "{{background}}",
+    "ScrollBar.Mac.Transparent.thumbColor": "{{foreground}}",
+    "ScrollBar.Mac.hoverThumbColor": "{{foreground}}",
+    "ScrollBar.Mac.trackColor": "{{foreground}}",
     "TabbedPane": {
       "underlineColor": "{{invertedHighlight}}",
-      "hoverColor": "{{background}}"
+      "hoverColor": "{{foreground}}"
     },
     "TextArea": {
-      "background": "{{dimBackground}}",
-      "inactiveBackground": "{{dimBackground}}"
+      "background": "{{dimForeground}}",
+      "inactiveBackground": "{{dimForeground}}"
     },
     "TextField": {
-      "background": "{{dimBackground}}",
-      "inactiveForeground": "{{dimBackground}}"
+      "background": "{{dimForeground}}",
+      "inactiveForeground": "{{dimForeground}}"
     },
-    "ToolBar.background": "{{background}}",
+    "ToolBar.background": "{{foreground}}",
     "ToolTip": {
-      "background": "{{background}}"
+      "background": "{{foreground}}"
     },
     "ToolTip.Actions": {
-      "background": "{{background}}"
+      "background": "{{foreground}}"
     },
     "ToolWindow": {
       "Button": {
-        "hoverBackground": "{{background}}",
-        "selectedBackground": "{{background}}"
+        "hoverBackground": "{{foreground}}",
+        "selectedBackground": "{{foreground}}"
       },
       "Header": {
-        "inactiveBackground": "{{background}}",
-        "background": "{{background}}"
+        "inactiveBackground": "{{foreground}}",
+        "background": "{{foreground}}"
       },
       "HeaderTab": {
-        "hoverBackground": "{{background}}",
-        "selectedInactiveBackground": "{{background}}",
-        "hoverInactiveBackground": "{{background}}",
-        "underlinedTabBackground": "{{background}}"
+        "hoverBackground": "{{foreground}}",
+        "selectedInactiveBackground": "{{foreground}}",
+        "hoverInactiveBackground": "{{foreground}}",
+        "underlinedTabBackground": "{{foreground}}"
       },
       "HeaderCloseButton": {
-        "background": "{{background}}"
+        "background": "{{foreground}}"
       }
     },
-    "Toolbar.Floating.background": "{{background}}",
+    "Toolbar.Floating.background": "{{foreground}}",
     "Tree": {
-      "foreground": "{{foreground}}",
-      "selectionForeground": "{{foreground}}",
+      "foreground": "{{background}}",
+      "selectionForeground": "{{background}}",
       "selectionBackground": "{{invertedHighlight}}",
       "selectionInactiveBackground": "{{invertedHighlight}}",
-      "background": "{{dimBackground}}"
+      "background": "{{dimForeground}}"
     }
   }
 }

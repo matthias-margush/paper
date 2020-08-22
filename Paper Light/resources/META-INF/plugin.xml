@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="762A8223-BB63-43DD-9C1D-11F64F7DE852" path="/Paper Light.theme.json"/>
+    <themeProvider id="613C0D32-F748-499F-AFCF-D61A3DD8BDEA" path="/Paper Light.theme.json"/>
   </extensions>
 
   <actions>

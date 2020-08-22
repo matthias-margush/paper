@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="E429D584-602D-4199-A333-8FA71E417970" path="/Paper Dark.theme.json"/>
+    <themeProvider id="275C8AC4-76B3-45AE-B20A-1BE6B7D6D5B6" path="/Paper Dark.theme.json"/>
   </extensions>
 
   <actions>

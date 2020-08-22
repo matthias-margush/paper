@@ -25,6 +25,16 @@ invert() {
   printf "#%s%s%s" "$red" "$green" "$blue"
 }
 
+theme_uuid() {
+  mkdir -p .uuids
+  local theme="$1"
+  if [ ! -f ".uuids/${theme}" ]; then
+    uuidgen >".uuids/${theme}"
+  fi
+
+  cat ".uuids/${theme}"
+}
+
 gen_theme() {
   colors['invertedHighlight']=$(invert ${colors['highlight']})
   colors['invertedGrey']=$(invert ${colors['grey']})
@@ -38,13 +48,13 @@ gen_theme() {
   local uuid=""
   if [ "$dark" == "true" ]; then
     dark="false"
-    theme="${theme} Light"
-    uuid="$light_uuid"
+    theme="${theme} Dark"
   else
     dark="true"
-    theme="${theme} Dark"
-    uuid="$dark_uuid"
+    theme="${theme} Light"
   fi
+
+  uuid=$(theme_uuid "$theme")
 
   printf "Generating %s\n" "$theme"
 
@@ -77,41 +87,41 @@ gen_theme() {
 }
 
 gen_all_themes() {
-for theme in themes/*.sh; do
-  source "$theme"
+  for theme in themes/*.sh; do
+    source "$theme"
 
-  gen_theme
+    gen_theme
 
-  # invert
+    # invert
 
-  colors["highlight"]="${colors['invertedHighlight']}"
+    colors["highlight"]="${colors['invertedHighlight']}"
 
-  local foreground="${colors['foreground']}"
-  local background="${colors['background']}"
-  local dimBackground="${colors['dimBackground']}"
-  local dimForeground="${colors['dimForeground']}"
+    local foreground="${colors['foreground']}"
+    local background="${colors['background']}"
+    local dimBackground="${colors['dimBackground']}"
+    local dimForeground="${colors['dimForeground']}"
 
-  colors["foreground"]="$background"
-  colors["dimForeground"]="$dimBackground"
+    colors["foreground"]="$background"
+    colors["dimForeground"]="$dimBackground"
 
-  colors["background"]="$foreground"
-  colors["dimBackground"]="$dimForeground"
+    colors["background"]="$foreground"
+    colors["dimBackground"]="$dimForeground"
 
-  colors["grey"]=$(invert "${colors['grey']}")
-  colors["red"]=$(invert "${colors['red']}")
-  colors["green"]=$(invert "${colors['green']}")
-  colors["blue"]=$(invert "${colors['blue']}")
-  colors["purple"]=$(invert "${colors['purple']}")
-  colors["yellow"]=$(invert "${colors['yellow']}")
+    colors["grey"]=$(invert "${colors['grey']}")
+    colors["red"]=$(invert "${colors['red']}")
+    colors["green"]=$(invert "${colors['green']}")
+    colors["blue"]=$(invert "${colors['blue']}")
+    colors["purple"]=$(invert "${colors['purple']}")
+    colors["yellow"]=$(invert "${colors['yellow']}")
 
-#  if [ "$dark" == "true" ]; then
-#    dark="false"
-#  else
-#    dark="true"
-#  fi
+    #  if [ "$dark" == "true" ]; then
+    #    dark="false"
+    #  else
+    #    dark="true"
+    #  fi
 
-  gen_theme
-done
+    gen_theme
+  done
 
 }
 
