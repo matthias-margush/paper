@@ -9,7 +9,7 @@
       "Actions.Green": "{{invertedGreen}}",
       "Actions.Grey": "{{invertedGrey}}",
       "Actions.GreyInline": "{{invertedGrey}}",
-      "Actions.GreyInline.Dark": "{{invertedGrey}}",
+      "Actions.GreyInline.Dark": "{{invertedHighlight}}",
       "Actions.Red": "{{invertedRed}}",
       "Actions.Yellow": "{{invertedYellow}}",
       "Objects.BlackText": "{{foreground}}",
@@ -52,7 +52,7 @@
       "default.endBackground": "{{background}}"
     },
     "CheckBox": {
-      "foreground": "{{invertedGrey}}"
+      "foreground": "{{highlight}}"
       },
     "ComboBox": {
       "background": "{{foreground}}",
@@ -82,12 +82,12 @@
       "underlineHeight": 3
     },
     "FileColor": {
-      "Blue": "{{invertedBlue}}",
-      "Green": "{{invertedGreen}}",
-      "Orange": "{{invertedRed}}",
-      "Rose": "{{invertedRed}}",
-      "Violet": "{{invertedPurple}}",
-      "Yellow": "{{invertedYellow}}"
+      "Blue": "{{blue}}",
+      "Green": "{{green}}",
+      "Orange": "{{red}}",
+      "Rose": "{{red}}",
+      "Violet": "{{purple}}",
+      "Yellow": "{{yellow}}"
     },
     "Link": {
       "activeForeground": "{{invertedBlue}}",

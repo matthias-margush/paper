@@ -9,7 +9,7 @@
       "Actions.Green": "#85E89D",
       "Actions.Grey": "#959DA5",
       "Actions.GreyInline": "#959DA5",
-      "Actions.GreyInline.Dark": "#959DA5",
+      "Actions.GreyInline.Dark": "#30363D",
       "Actions.Red": "#F97583",
       "Actions.Yellow": "#FFEA7F",
       "Objects.BlackText": "#24292E",
@@ -52,7 +52,7 @@
       "default.endBackground": "#F6F8FA"
     },
     "CheckBox": {
-      "foreground": "#959DA5"
+      "foreground": "#B0B6BD"
       },
     "ComboBox": {
       "background": "#24292E",
@@ -82,12 +82,12 @@
       "underlineHeight": 3
     },
     "FileColor": {
-      "Blue": "#73E3FF",
-      "Green": "#85E89D",
-      "Orange": "#F97583",
-      "Rose": "#F97583",
-      "Violet": "#B392F0",
-      "Yellow": "#FFEA7F"
+      "Blue": "#F3637F",
+      "Green": "#05681D",
+      "Orange": "#79F503",
+      "Rose": "#79F503",
+      "Violet": "#331270",
+      "Yellow": "#7F6AFF"
     },
     "Link": {
       "activeForeground": "#73E3FF",

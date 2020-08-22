@@ -431,8 +431,8 @@
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="BACKGROUND" value="79f503" />
-        <option name="ERROR_STRIPE_COLOR" value="f97583" />
+        <option name="BACKGROUND" value="f3637f" />
+        <option name="ERROR_STRIPE_COLOR" value="73e3ff" />
       </value>
     </option>
     <option name="DUPLICATE_FROM_SERVER">

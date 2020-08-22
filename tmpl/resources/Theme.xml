@@ -431,8 +431,8 @@
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="BACKGROUND" value="{{invertedRed}}" />
-        <option name="ERROR_STRIPE_COLOR" value="{{red}}" />
+        <option name="BACKGROUND" value="{{invertedBlue}}" />
+        <option name="ERROR_STRIPE_COLOR" value="{{blue}}" />
       </value>
     </option>
     <option name="DUPLICATE_FROM_SERVER">
