@@ -1,7 +1,7 @@
 {
-  "name": "Paper Light",
+  "name": "Paper Dark Mixed",
   "author": "Matthias C. Margush",
-  "editorScheme": "/Paper Light.xml",
+  "editorScheme": "/Paper Dark Mixed.xml",
   "dark": false,
   "icons": {
     "ColorPalette": {
@@ -34,7 +34,7 @@
     "Borders.color": "#DDD9CC",
     "Button": {
       "foreground": "#2A2A2A",
-      "disabledText": "#777777",
+      "disabledText": "#F7F7F7",
       "background": "#E8E6E2",
       "startBackground": "#E8E6E2",
       "endBackground": "#E8E6E2",
@@ -52,7 +52,7 @@
       "default.endBackground": "#2A2A2A"
     },
     "CheckBox": {
-      "foreground": "#777777"
+      "foreground": "#F7F7F7"
       },
     "ComboBox": {
       "background": "#E8E6E2",
@@ -82,12 +82,12 @@
       "underlineHeight": 3
     },
     "FileColor": {
-      "Blue": "#555577",
-      "Green": "#557755",
-      "Orange": "#775555",
-      "Rose": "#775555",
-      "Violet": "#775577",
-      "Yellow": "#777755"
+      "Blue": "#D5D5F7",
+      "Green": "#D5F7D5",
+      "Orange": "#F7D5D5",
+      "Rose": "#F7D5D5",
+      "Violet": "#F7D5F7",
+      "Yellow": "#F7F7D5"
     },
     "Link": {
       "activeForeground": "#555577",

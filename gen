@@ -1,5 +1,10 @@
 #!/usr/local/bin/bash
 
+if [ ! "${BASH_VERSINFO:-0}" -ge 4 ]; then
+  echo "your bash is ancient, bruh" >&2
+  exit 1
+fi
+
 invert_basic_color() {
   local hex="$1"
 
@@ -10,7 +15,7 @@ invert_basic_color() {
   fi
 }
 
-invert() {
+invert_color() {
   local color="$1"
   local hex="0x${color:1}"
 
@@ -25,51 +30,30 @@ invert() {
   printf "#%s%s%s" "$red" "$green" "$blue"
 }
 
-theme_uuid() {
+gen_theme_uuid() {
   mkdir -p .uuids
-  local theme="$1"
-  if [ ! -f ".uuids/${theme}" ]; then
-    uuidgen >".uuids/${theme}"
+  if [ ! -f ".uuids/${theme_name}" ]; then
+    uuidgen >".uuids/${theme_name}"
   fi
 
-  cat ".uuids/${theme}"
+  theme_uuid=$(cat ".uuids/${theme_name}")
 }
 
-gen_theme() {
-  colors['invertedHighlight']=$(invert ${colors['highlight']})
-  colors['invertedGrey']=$(invert ${colors['grey']})
-  colors['invertedRed']=$(invert ${colors['red']})
-  colors['invertedGreen']=$(invert ${colors['green']})
-  colors['invertedBlue']=$(invert ${colors['blue']})
-  colors['invertedPurple']=$(invert ${colors['purple']})
-  colors['invertedYellow']=$(invert ${colors['yellow']})
-
-  local theme="$theme"
-  local uuid=""
-  if [ "$dark" == "true" ]; then
-    dark="false"
-    theme="${theme} Dark"
-  else
-    dark="true"
-    theme="${theme} Light"
-  fi
-
-  uuid=$(theme_uuid "$theme")
-
-  printf "Generating %s\n" "$theme"
-
-  mkdir -p "$theme/resources/META-INF"
+gen_ide_theme() {
+  mkdir -p "$theme_name/resources/META-INF"
   ide_substitutions=""
   for name in "${!colors[@]}"; do
     code="${colors[$name]}"
     code=$(echo "$code" | tr '[:lower:]' '[:upper:]')
     ide_substitutions="s/{{$name}}/$code/g; $ide_substitutions"
   done
-  ide_substitutions="s/{{theme}}/$theme/g; $ide_substitutions"
-  ide_substitutions="s/{{dark}}/$dark/g; $ide_substitutions"
+  ide_substitutions="s/{{theme}}/$theme_name/g; $ide_substitutions"
+  ide_substitutions="s/{{dark}}/$theme_dark/g; $ide_substitutions"
 
-  sed "$ide_substitutions" "tmpl/resources/Theme.theme.json" >"$theme/resources/$theme.theme.json"
+  sed "$ide_substitutions" "tmpl/resources/Theme.theme.json.mo" >"$theme_name/resources/$theme_name.theme.json"
+}
 
+gen_editor_theme() {
   editor_substitutions=""
   for name in "${!colors[@]}"; do
     code="${colors[$name]}"
@@ -77,13 +61,50 @@ gen_theme() {
     code=$(echo "$code" | tr '[:upper:]' '[:lower:]')
     editor_substitutions="s/{{$name}}/$code/g; $editor_substitutions"
   done
-  editor_substitutions="s/{{theme}}/$theme/g; $editor_substitutions"
-  editor_substitutions="s/{{dark}}/$dark/g; $editor_substitutions"
+  editor_substitutions="s/{{theme}}/$theme_name/g; $editor_substitutions"
+  editor_substitutions="s/{{dark}}/$theme_dark/g; $editor_substitutions"
 
-  sed "$editor_substitutions" "tmpl/resources/Theme.xml" >"$theme/resources/$theme.xml"
+  sed "$editor_substitutions" "tmpl/resources/Theme.xml.mo" >"$theme_name/resources/$theme_name.xml"
+}
 
-  plugin_xml_substitutions="s/{{theme}}/$theme/g; s/{{description}}/$description/; s/{{uuid}}/$uuid/g"
-  sed "$plugin_xml_substitutions" "tmpl/resources/META-INF/plugin.xml" >"$theme/resources/META-INF/plugin.xml"
+gen_inverted_colors() {
+  colors['invertedHighlight']=$(invert_color "${colors['highlight']}")
+  colors['invertedGrey']=$(invert_color "${colors['grey']}")
+  colors['invertedRed']=$(invert_color "${colors['red']}")
+  colors['invertedGreen']=$(invert_color "${colors['green']}")
+  colors['invertedBlue']=$(invert_color "${colors['blue']}")
+  colors['invertedPurple']=$(invert_color "${colors['purple']}")
+  colors['invertedYellow']=$(invert_color "${colors['yellow']}")
+}
+
+theme_name=""
+theme_uuid=""
+theme_dark=""
+gen_theme_name() {
+  theme_dark="$dark"
+  if [ "$dark" == "true" ]; then
+    theme_name="${theme} Dark"
+  else
+    theme_name="${theme} Light"
+  fi
+  printf "Generating %s\n" "$theme_name"
+}
+
+gen_theme() {
+  gen_theme_name
+  gen_inverted_colors
+  gen_theme_uuid
+
+  plugin_xml_substitutions="s/{{theme}}/$theme_name/g; s/{{description}}/$description/; s/{{uuid}}/$theme_uuid/g"
+  sed "$plugin_xml_substitutions" "tmpl/resources/META-INF/plugin.xml.mo" >"$theme_name/resources/META-INF/plugin.xml"
+
+  gen_editor_theme
+
+  invert_fgbg
+  invert_colors
+  gen_ide_theme
+  invert_fgbg
+  invert_colors
 }
 
 gen_all_themes() {
@@ -92,37 +113,47 @@ gen_all_themes() {
 
     gen_theme
 
-    # invert
-
-    colors["highlight"]="${colors['invertedHighlight']}"
-
-    local foreground="${colors['foreground']}"
-    local background="${colors['background']}"
-    local dimBackground="${colors['dimBackground']}"
-    local dimForeground="${colors['dimForeground']}"
-
-    colors["foreground"]="$background"
-    colors["dimForeground"]="$dimBackground"
-
-    colors["background"]="$foreground"
-    colors["dimBackground"]="$dimForeground"
-
-    colors["grey"]=$(invert "${colors['grey']}")
-    colors["red"]=$(invert "${colors['red']}")
-    colors["green"]=$(invert "${colors['green']}")
-    colors["blue"]=$(invert "${colors['blue']}")
-    colors["purple"]=$(invert "${colors['purple']}")
-    colors["yellow"]=$(invert "${colors['yellow']}")
-
-    #  if [ "$dark" == "true" ]; then
-    #    dark="false"
-    #  else
-    #    dark="true"
-    #  fi
-
-    gen_theme
+    invert_theme && gen_theme
   done
+}
 
+invert_colors() {
+  # invert colors
+  colors["red"]=$(invert_color "${colors['red']}")
+  colors["green"]=$(invert_color "${colors['green']}")
+  colors["blue"]=$(invert_color "${colors['blue']}")
+  colors["purple"]=$(invert_color "${colors['purple']}")
+  colors["yellow"]=$(invert_color "${colors['yellow']}")
+
+  gen_inverted_colors
+}
+
+invert_fgbg() {
+  # swap foregrounds & backgrounds
+  local foreground="${colors['foreground']}"
+  local background="${colors['background']}"
+  local dimBackground="${colors['dimBackground']}"
+  local dimForeground="${colors['dimForeground']}"
+
+  colors["foreground"]="$background"
+  colors["dimForeground"]="$dimBackground"
+  colors["background"]="$foreground"
+  colors["dimBackground"]="$dimForeground"
+
+  colors["highlight"]="${colors['invertedHighlight']}"
+  colors["grey"]=$(invert_color "${colors['grey']}")
+  gen_inverted_colors
+}
+
+invert_theme() {
+  if [ "$dark" == "true" ]; then
+    dark="false"
+  else
+    dark="true"
+  fi
+
+  invert_fgbg
+  invert_colors
 }
 
 gen_all_themes

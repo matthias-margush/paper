@@ -1,16 +1,14 @@
-theme="Paper"
-description="A paper-inspired theme for Jetbrains IDEs."
+theme="paper"
+description="a paper-inspired theme for jetbrains ides."
 dark="false"
-dark_uuid="E429D584-602D-4199-A333-8FA71E417970"
-light_uuid="762A8223-BB63-43DD-9C1D-11F64F7DE852"
-declare -A colors=(
-  ["highlight"]="#DDD9CC"
+declare -a colors=(
+  ["highlight"]="#ddd9cc"
 
-  ["foreground"]="#2A2A2A"
-  ["dimForeground"]="#3A3A3A"
+  ["foreground"]="#2a2a2a"
+  ["dimforeground"]="#3a3a3a"
 
-  ["background"]="#E8E6E2"
-  ["dimBackground"]="#F8F6F2"
+  ["background"]="#e8e6e2"
+  ["dimbackground"]="#f8f6f2"
 
   ["red"]="#775555"
   ["green"]="#557755"
@@ -20,3 +18,5 @@ declare -A colors=(
 
   ["grey"]="#777777"
 )
+
+export colors theme description dark

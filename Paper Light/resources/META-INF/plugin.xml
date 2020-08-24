@@ -5,7 +5,7 @@
   <vendor email="matthias.margush@me.com" url="http://github.com/matthias-margush/paper">Matthias Margush</vendor>
 
   <description><![CDATA[
-  A paper-inspired theme for Jetbrains IDEs.
+  A paper-inspired theme for jetbrains IDE HIs.
     ]]></description>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="613C0D32-F748-499F-AFCF-D61A3DD8BDEA" path="/Paper Light.theme.json"/>
+    <themeProvider id="957f132a-53cf-58d9-9f07-28b5d6edf638" path="/Paper Light.theme.json"/>
   </extensions>
 
   <actions>

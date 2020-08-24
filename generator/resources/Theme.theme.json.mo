@@ -1,8 +1,8 @@
 {
-  "name": "CI Light",
+  "name": "{{theme}}",
   "author": "Matthias C. Margush",
-  "editorScheme": "/CI Light.xml",
-  "dark": false,
+  "editorScheme": "/{{theme}}.xml",
+  "dark": {{dark}},
   "icons": {
     "ColorPalette": {
       "Actions.Blue": "{{blue}}",

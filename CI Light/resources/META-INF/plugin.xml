@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="843AEE6F-F563-4906-BD70-A0875A1880A5" path="/CI Light.theme.json"/>
+    <themeProvider id="c5b8415d-5e47-54e8-9fed-d11ebc9a8dc9" path="/CI Light.theme.json"/>
   </extensions>
 
   <actions>

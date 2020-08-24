@@ -1,6 +1,6 @@
 <idea-plugin>
-  <id>com.margush.Paper Dark</id>
-  <name>Paper Dark</name>
+  <id>com.margush.Paper Dark Mixed</id>
+  <name>Paper Dark Mixed</name>
   <version>1.0</version>
   <vendor email="matthias.margush@me.com" url="http://github.com/matthias-margush/paper">Matthias Margush</vendor>
 
@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="b7168ec7-19b8-54a4-81b1-3005b610c9fd" path="/Paper Dark.theme.json"/>
+    <themeProvider id="be014549-c9d6-5713-be41-46bb212204ea" path="/Paper Dark Mixed.theme.json"/>
   </extensions>
 
   <actions>

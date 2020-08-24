@@ -1,11 +1,11 @@
 <idea-plugin>
-  <id>com.margush.Paper Dark</id>
-  <name>Paper Dark</name>
+  <id>com.margush.CI Dark Mixed</id>
+  <name>CI Dark Mixed</name>
   <version>1.0</version>
   <vendor email="matthias.margush@me.com" url="http://github.com/matthias-margush/paper">Matthias Margush</vendor>
 
   <description><![CDATA[
-  A paper-inspired theme for jetbrains IDE HIs.
+  A CI theme for Jetbrains IDEs.
     ]]></description>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
@@ -17,7 +17,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
-    <themeProvider id="b7168ec7-19b8-54a4-81b1-3005b610c9fd" path="/Paper Dark.theme.json"/>
+    <themeProvider id="3651c283-ac18-5fff-96a1-e7d279a60b40" path="/CI Dark Mixed.theme.json"/>
   </extensions>
 
   <actions>

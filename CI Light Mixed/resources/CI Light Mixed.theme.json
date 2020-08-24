@@ -1,7 +1,7 @@
 {
-  "name": "CI Dark",
+  "name": "CI Light Mixed",
   "author": "Matthias C. Margush",
-  "editorScheme": "/CI Dark.xml",
+  "editorScheme": "/CI Light Mixed.xml",
   "dark": true,
   "icons": {
     "ColorPalette": {

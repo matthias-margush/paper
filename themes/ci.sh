@@ -17,3 +17,5 @@ declare -A colors=(
   ["yellow"]="#FFEA7F"
   ["grey"]="#959DA5"
 )
+
+export colors theme description dark
