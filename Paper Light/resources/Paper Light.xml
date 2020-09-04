@@ -597,29 +597,6 @@
         <option name="FOREGROUND" value="ff" />
       </value>
     </option>
-    <option name="MARKDOWN_HTML_BLOCK">
-      <value>
-        <option name="FOREGROUND" value="e8e6e2" />
-      </value>
-    </option>
-    <option name="MARKDOWN_INLINE_HTML">
-      <value>
-        <option name="FOREGROUND" value="e8e6e2" />
-      </value>
-    </option>
-    <option name="MARKDOWN_LINK_DESTINATION">
-      <value />
-    </option>
-    <option name="MARKDOWN_LIST_ITEM">
-      <value>
-        <option name="FOREGROUND" value="e8e6e2" />
-      </value>
-    </option>
-    <option name="MARKDOWN_TEXT">
-      <value>
-        <option name="FOREGROUND" value="e8e6e2" />
-      </value>
-    </option>
     <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="775555" />
