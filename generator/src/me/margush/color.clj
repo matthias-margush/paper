@@ -43,3 +43,21 @@
     [(invert-basic-color r)
      (invert-basic-color g)
      (invert-basic-color b)]))
+
+
+(defn mid-basic-color
+  ""
+  [c1 c2]
+  (let [c1' (min c1 c2)
+        c2' (max c1 c2)]
+    (int (+ c1' (/ (- c2' c1') 2)))))
+
+(defn mid
+  ""
+  [color1 color2]
+  (let [[r1 g1 b1] (read color1)
+        [r2 g2 b2] (read color2)]
+    [(mid-basic-color r1 r2)
+     (mid-basic-color g1 g2)
+     (mid-basic-color b1 b2)]))
+

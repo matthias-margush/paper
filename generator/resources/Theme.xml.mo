@@ -31,7 +31,7 @@
     <option name="FILESTATUS_IDEA_SVN_FILESTATUS_OBSTRUCTED" value="{{invertedYellow}}" />
     <option name="FILESTATUS_IDEA_SVN_REPLACED" value="{{invertedGreen}}" />
     <option name="FILESTATUS_MERGED" value="{{invertedBlue}}" />
-    <option name="FILESTATUS_MODIFIED" value="{{invertedBlue}}" />
+    <option name="FILESTATUS_MODIFIED" value="{{mid}}" />
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="{{invertedBlue}}" />
     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="{{invertedBlue}}" />
     <option name="FILESTATUS_OBSOLETE" value="{{invertedYellow}}" />

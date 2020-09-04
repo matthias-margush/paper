@@ -28,8 +28,8 @@
                   :grey          "#777777"}}
    {:theme       "CI"
     :description "A CI theme for Jetbrains IDEs."
-    :dark=       "true"
-    :colors=     {:highlight     "#30363D"
+    :dark        "true"
+    :colors      {:highlight     "#30363D"
                   :foreground    "#F6F8FA"
                   :dimForeground "#F6F8FA"
                   :background    "#24292E"
@@ -71,7 +71,8 @@
   (prn theme)
   (->>
     (into {} (map #(inverted % mixed) colors))
-    (merge colors)))
+    (merge colors
+           {:mid (color/mid (:background colors) (:foreground colors))})))
 
 (defn theme-metadata
   "Get the theme metadata."
@@ -133,11 +134,12 @@
 
 (defn invert-colors
   ""
-  [{:keys [foreground dimForeground background dimBackground] :as colors}]
+  [{:keys [foreground dimForeground background dimBackground mid] :as colors}]
   (assoc
     (map-values color/invert colors)
     :foreground background
     :background foreground
+    :mid mid
     :dimForeground dimBackground
     :dimBackground dimForeground))
 
