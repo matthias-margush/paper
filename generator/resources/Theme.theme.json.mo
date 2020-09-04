@@ -52,7 +52,7 @@
       "default.endBackground": "{{foreground}}"
     },
     "CheckBox": {
-      "foreground": "{{invertedGrey}}"
+      "foreground": "{{mid}}"
       },
     "ComboBox": {
       "background": "{{background}}",

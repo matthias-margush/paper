@@ -68,7 +68,6 @@
 (defn colors
   "Map values in the map to editor theme colors."
   [{:keys [colors mixed] :as theme}]
-  (prn theme)
   (->>
     (into {} (map #(inverted % mixed) colors))
     (merge colors
@@ -202,7 +201,7 @@
        (assoc theme :dark false :theme theme-name :uuid theme-uuid)])))
 
 (defn light-mixed
-  ""
+  "hi "
   [{:keys [editor ide plugin] :as template} {:keys [dark] :as theme}]
   (let [theme-name (str (:theme theme) " Light Mixed")
         theme-uuid (uuid/v5 uuid/+namespace-oid+ theme-name)]

@@ -56,7 +56,7 @@
     <option name="PROMOTION_PANE" value="{{blue}}" />
     <option name="QUESTION_HINT" value="{{yellow}}" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="" />
-    <option name="RECENT_LOCATIONS_SELECTION" value="{{blue}}" />
+    <option name="RECENT_LOCATIONS_SELECTION" value="{{highlight}}" />
     <option name="RIGHT_MARGIN_COLOR" value="{{highlight}}" />
     <option name="SELECTED_INDENT_GUIDE" value="{{highlight}}" />
     <option name="TEARLINE_COLOR" value="{{highlight}}" />

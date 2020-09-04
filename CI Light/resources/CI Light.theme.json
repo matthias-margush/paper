@@ -52,7 +52,7 @@
       "default.endBackground": "#24292E"
     },
     "CheckBox": {
-      "foreground": "#151D25"
+      "foreground": "#8D9094"
       },
     "ComboBox": {
       "background": "#F6F8FA",

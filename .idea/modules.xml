@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CI Dark/CI Dark.iml" filepath="$PROJECT_DIR$/CI Dark/CI Dark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CI Dark Mixed/CI Dark Mixed.iml" filepath="$PROJECT_DIR$/CI Dark Mixed/CI Dark Mixed.iml" />
       <module fileurl="file://$PROJECT_DIR$/CI Light/CI Light.iml" filepath="$PROJECT_DIR$/CI Light/CI Light.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CI Light Mixed/CI Light Mixed.iml" filepath="$PROJECT_DIR$/CI Light Mixed/CI Light Mixed.iml" />
       <module fileurl="file://$PROJECT_DIR$/Paper Dark/Paper Dark.iml" filepath="$PROJECT_DIR$/Paper Dark/Paper Dark.iml" />
       <module fileurl="file://$PROJECT_DIR$/Paper Dark Mixed/Paper Dark Mixed.iml" filepath="$PROJECT_DIR$/Paper Dark Mixed/Paper Dark Mixed.iml" />
       <module fileurl="file://$PROJECT_DIR$/Paper Light/Paper Light.iml" filepath="$PROJECT_DIR$/Paper Light/Paper Light.iml" />
