@@ -25,7 +25,7 @@
                   :dimForeground "#3a3a3a"
                   :background    "#f9f9f9"
                   :dimBackground "#f8f6f2"
-                  :red           "#775555"
+                  :red           "#77555"
                   :green         "#557755"
                   :blue          "#555577"
                   :purple        "#775577"
