@@ -2,13 +2,17 @@
   (:require [clojure.string :as str])
   (:refer-clojure :exclude [read]))
 
+(defn- extract-hex
+  ""
+  [n]
+  [(bit-shift-right (bit-and n 0xFF0000) 16)
+   (bit-shift-right (bit-and n 0x00FF00) 8)
+   (bit-and n 0x0000FF)])
+
 (defn- parse-hex
   ""
   [input]
-  (let [hex (Integer/parseInt input 16)]
-    [(bit-shift-right (bit-and hex 0xFF0000) 16)
-     (bit-shift-right (bit-and hex 0x00FF00) 8)
-     (bit-and hex 0x0000FF)]))
+  (extract-hex (Integer/parseInt input 16)))
 
 (defn read
   ""
@@ -21,7 +25,10 @@
     (parse-hex color)
 
     (vector? color)
-    color))
+    color
+
+    :else
+    (extract-hex color)))
 
 (defn hex-format
   ""
@@ -35,6 +42,15 @@
   (if (> c 0x7F)
     (- c 0x80)
     (- 0xFF (- 0x7F c))))
+
+(defn highlight
+  ""
+  [color1 color2]
+  (let [[r1 g1 b1] (read color1)
+        [r2 g2 b2] (read color2)]
+    [(if (> r1 0x7F) (- r1 r2) (+ r1 r2))
+     (if (> g1 0x7F) (- g1 g2) (+ g1 g2))
+     (if (> b1 0x7F) (- b1 b2) (+ b1 b2))]))
 
 (defn invert
   ""

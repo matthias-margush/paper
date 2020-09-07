@@ -4,21 +4,26 @@
             [clojure.string :as str]
             [me.margush.color :as color]))
 
-(defn map-values [f m]
+(defn map-values
+  "Maps f over the values in the map."
+  [f m]
   (into (empty m) (for [[k v] m] [k (f v)])))
 
-(defn map-keys [f m]
+(defn map-keys
+  "Maps f over the keys in the map."
+  [f m]
   (into (empty m) (for [[k v] m] [(f k) v])))
+
+(def highlight-offset 0x0B0D16)
 
 (def themes
   "Themes"
   [{:theme       "Paper"
     :description "A paper-inspired theme for jetbrains IDE HIs."
     :dark        false
-    :colors      {:highlight     "#ddd9cc"
-                  :foreground    "#2a2a2a"
+    :colors      {:foreground    "#2a2a2a"
                   :dimForeground "#3a3a3a"
-                  :background    "#e8e6e2"
+                  :background    "#f9f9f9"
                   :dimBackground "#f8f6f2"
                   :red           "#775555"
                   :green         "#557755"
@@ -29,8 +34,7 @@
    {:theme       "CI"
     :description "A CI theme for Jetbrains IDEs."
     :dark        "true"
-    :colors      {:highlight     "#30363D"
-                  :foreground    "#F6F8FA"
+    :colors      {:foreground    "#F6F8FA"
                   :dimForeground "#F6F8FA"
                   :background    "#24292E"
                   :dimBackground "#2D3237"
@@ -60,18 +64,25 @@
 (defn inverted
   ""
   [[k color] mixed]
-  [(str "inverted" (str/capitalize (name k)))
+  [(keyword (str "inverted" (str/capitalize (name k))))
    (if mixed
      (color/invert color)
      color)])
 
 (defn colors
   "Map values in the map to editor theme colors."
-  [{:keys [colors mixed] :as theme}]
+  [{:keys [colors mixed]}]
+  (prn
+    (->>
+      (into {} (map #(inverted % mixed) colors))
+      (merge colors)))
+
   (->>
     (into {} (map #(inverted % mixed) colors))
-    (merge colors
-           {:mid (color/mid (:background colors) (:foreground colors))})))
+    (merge colors)
+    (merge {:mid (color/mid (:background colors) (:foreground colors))
+            :highlight (color/highlight (:background colors) highlight-offset)
+            :highlightedGreen (color/highlight (:green colors) highlight-offset)})))
 
 (defn theme-metadata
   "Get the theme metadata."
@@ -123,14 +134,6 @@
     (read-template template)
     (theme-subs template theme)))
 
-(defn invert-theme
-  ""
-  [{:keys [theme description dark colors]}]
-  {:theme       theme
-   :description description
-   :dark        (not dark)
-   :colors      (map-values color/invert colors)})
-
 (defn invert-colors
   ""
   [{:keys [foreground dimForeground background dimBackground mid] :as colors}]
@@ -157,7 +160,7 @@
 
 (defn dark
   ""
-  [{:keys [editor ide plugin] :as template} {:keys [dark] :as theme}]
+  [{:keys [editor ide plugin]} {:keys [dark] :as theme}]
   (let [theme-name (str (:theme theme) " Dark")
         theme-uuid (uuid/v5 uuid/+namespace-oid+ theme-name)]
     (if dark
@@ -172,7 +175,7 @@
 
 (defn dark-mixed
   ""
-  [{:keys [editor ide plugin] :as template} {:keys [dark] :as theme}]
+  [{:keys [editor ide plugin]} {:keys [dark] :as theme}]
   (let [theme-name (str (:theme theme) " Dark Mixed")
         theme-uuid (uuid/v5 uuid/+namespace-oid+ theme-name)]
     (if dark
@@ -187,7 +190,7 @@
 
 (defn light
   ""
-  [{:keys [editor ide plugin] :as template} {:keys [dark] :as theme}]
+  [{:keys [editor ide plugin]} {:keys [dark] :as theme}]
   (let [theme-name (str (:theme theme) " Light")
         theme-uuid (uuid/v5 uuid/+namespace-oid+ theme-name)]
     (if dark
@@ -202,7 +205,7 @@
 
 (defn light-mixed
   "hi "
-  [{:keys [editor ide plugin] :as template} {:keys [dark] :as theme}]
+  [{:keys [editor ide plugin]} {:keys [dark] :as theme}]
   (let [theme-name (str (:theme theme) " Light Mixed")
         theme-uuid (uuid/v5 uuid/+namespace-oid+ theme-name)]
     (if dark
