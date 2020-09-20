@@ -1,0 +1,40 @@
+{
+  "name": "Paper",
+  "author": "Matthias C. Margush",
+  "editorScheme": "/Paper.xml",
+  "dark": true,
+  "icons": {
+    "ColorPalette": {
+      "Actions.Blue": "#6996BB",
+      "Actions.Green": "#96BB69",
+      "Actions.Grey": "#919191",
+      "Actions.GreyInline": "#919191",
+      "Actions.GreyInline.Dark": "#919191",
+      "Actions.Red": "#775555",
+      "Actions.Yellow": "#BBBB69",
+      "Objects.BlackText": "#2A2A2A",
+      "Objects.Blue": "#555577",
+      "Objects.Green": "#557755",
+      "Objects.GreenAndroid": "#557755",
+      "Objects.Grey": "#919191",
+      "Objects.Pink": "#775555",
+      "Objects.Purple": "#775577",
+      "Objects.Red": "#775555",
+      "Objects.RedStatus": "#775555",
+      "Objects.Yellow": "#BBBB69",
+      "Objects.YellowDark": "#BBBB69"
+    }
+  },
+  "ui": {
+    "CompletionPopup": {
+      "selectionBackground": "#3A3A3A",
+      "selectionInactiveBackground": "#3A3A3A",
+      "foreground": "#E8E6E2",
+      "matchForeground": "#F8F6F2"
+    },
+    "Tree": {
+      "selectionInactiveBackground": "#3B4754",
+      "selectionBackground": "#3B4754"
+    }
+  }
+}
